@@ -344,6 +344,33 @@ body {
   color: var(--text-light);
 }
 .recipe-match strong { color: var(--pink-dark); font-weight: 700; }
+.source-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border-radius: 100px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  margin-top: 6px;
+}
+.source-tag-小红书 { background: #FFE8EC; color: #FF2442; }
+.source-tag-抖音 { background: #E8F4FF; color: #1A9BFC; }
+.source-tag-B站 { background: #EAF0FF; color: #5A7ADE; }
+.source-stats { font-weight: 400; opacity: 0.85; }
+.detail-source {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 100px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.detail-source.source-小红书 { background: #FFE8EC; color: #FF2442; }
+.detail-source.source-抖音 { background: #E8F4FF; color: #1A9BFC; }
+.detail-source.source-B站 { background: #EAF0FF; color: #5A7ADE; }
 .recipe-arrow {
   color: var(--pink-light);
   font-size: 1.2rem;

@@ -171,6 +171,9 @@ function renderResults(results) {
     const matchText = r.matchedIngredients && r.matchedIngredients.length > 0
       ? `匹配食材：<strong>${r.matchedIngredients.join("、")}</strong>`
       : "";
+    const sourceTag = r.source
+      ? `<div class="source-tag source-tag-${r.source.platform}">${r.source.platform}收录 <span class="source-stats">👍${r.source.likes} ⭐${r.source.saves}</span></div>`
+      : "";
     return `
       <div class="recipe-card" onclick="showDetail(${r.id})">
         <div class="recipe-emoji-wrap">${r.emoji}</div>
@@ -183,6 +186,7 @@ function renderResults(results) {
             ${spicyStr ? `<span class="badge badge-spicy">${spicyStr}</span>` : ""}
           </div>
           ${matchText ? `<div class="recipe-match">${matchText}</div>` : ""}
+          ${sourceTag}
         </div>
         <div class="recipe-arrow">›</div>
       </div>`;
@@ -197,6 +201,10 @@ function showDetail(id) {
 
   const spicyStr = recipe.spicy > 0 ? "🌶️".repeat(recipe.spicy) : "";
 
+  const sourceHtml = recipe.source
+    ? `<div class="detail-source source-${recipe.source.platform}">${recipe.source.platform}收录 · 👍${recipe.source.likes} · ⭐${recipe.source.saves}</div>`
+    : "";
+
   // Hero
   $("detail-hero").innerHTML = `
     <span class="detail-emoji">${recipe.emoji}</span>
@@ -206,7 +214,8 @@ function showDetail(id) {
       <span class="badge badge-time">⏱ ${recipe.time}</span>
       <span class="badge badge-diff-${recipe.difficulty}">${recipe.difficulty}</span>
       ${spicyStr ? `<span class="badge badge-spicy">${spicyStr}</span>` : ""}
-    </div>`;
+    </div>
+    ${sourceHtml}`;
 
   // 小猪点评
   $("pig-comment").innerHTML = `
