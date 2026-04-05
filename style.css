@@ -195,6 +195,8 @@ body {
 .pill.region-鲁菜.active  { background: #F0A050; border-color: #F0A050; }
 .pill.region-闽菜.active  { background: #7BC67E; border-color: #7BC67E; }
 .pill.region-徽菜.active  { background: #A78BFA; border-color: #A78BFA; }
+.pill.region-西北菜.active { background: #D4915C; border-color: #D4915C; }
+.pill.region-云贵菜.active { background: #6BCB77; border-color: #6BCB77; }
 
 /* ===== 食材输入 ===== */
 .ingredient-input-wrap {

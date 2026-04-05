@@ -74,7 +74,7 @@ function selectRegion(region, containerId) {
 // ===== 食材输入 =====
 function renderIngredientSuggestions() {
   const existing = new Set(state.selectedIngredients);
-  const common = ["鸡蛋", "西红柿", "土豆", "猪肉", "豆腐", "白菜", "青椒", "大蒜", "葱", "姜", "鸡胸肉", "五花肉", "牛肉", "虾", "鱼", "茄子", "胡萝卜", "排骨", "鸡翅", "木耳"];
+  const common = ["鸡蛋", "西红柿", "土豆", "猪肉", "豆腐", "白菜", "青椒", "大蒜", "葱", "姜", "鸡胸肉", "五花肉", "牛肉", "虾", "鱼", "茄子", "胡萝卜", "排骨", "鸡翅", "鸡腿", "木耳", "洋葱", "螃蟹", "羊肉"];
   const suggestions = common.filter(i => !existing.has(i)).slice(0, 12);
   $("suggestions").innerHTML = suggestions.map(s =>
     `<button class="suggestion-pill" onclick="addIngredient('${s}')">${s}</button>`

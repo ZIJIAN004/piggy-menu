@@ -1100,11 +1100,454 @@ const RECIPES = [
     pigComment: "一锅乱炖但就是超好吃！芝士融化拉丝的时候小猪的心也融化了！追剧必备！冬天吃超幸福！",
     source: { platform: "小红书", likes: "276.3万", saves: "189.7万" },
     imagePrompt: "Korean army stew budae jjigae, a bubbling hot pot filled with sliced spam, sausages, ramyeon noodles, rice cakes, kimchi, tofu, melted cheese stretching on top, cracked egg in center, fiery red spicy broth, cozy winter hotpot scene"
+  },
+
+  // ===== 新增 71-120 =====
+  {
+    id: 71, name: "口水鸡", region: "川菜", emoji: "🐔🌶️",
+    difficulty: "简单", time: "30分钟", spicy: 3,
+    ingredients: ["鸡腿", "花椒", "干辣椒", "花生", "芝麻", "大蒜", "姜", "葱", "生抽", "醋", "糖"],
+    steps: ["鸡腿冷水下锅加姜葱料酒煮20分钟","捞出冰水浸泡15分钟","切块摆盘","调汁：红油辣椒、花椒油、生抽、醋、糖、蒜泥混合","浇汁在鸡肉上，撒花生碎和芝麻"],
+    pigComment: "光听名字就流口水！麻辣鲜香酸甜全占了！小猪每次口水鸡的红油都要拌到饭里吃，一滴不剩！",
+    source: { platform: "抖音", likes: "267.3万", saves: "134.8万" },
+    imagePrompt: "kou shui ji Sichuan mouth-watering chicken, cold poached chicken pieces drowned in a pool of bright red chili oil with visible Sichuan peppercorns, crushed peanuts, white sesame seeds, scallion rings, glistening and seductive"
+  },
+  {
+    id: 72, name: "担担面", region: "川菜", emoji: "🍜🌶️",
+    difficulty: "中等", time: "25分钟", spicy: 2,
+    ingredients: ["面条", "猪肉末", "芽菜", "花椒", "干辣椒", "芝麻酱", "生抽", "醋", "葱"],
+    steps: ["肉末加料酒炒散，加芽菜炒香备用","碗底调汁：芝麻酱、辣椒油、花椒粉、生抽、醋、糖","面条煮熟捞入碗中","铺上炒好的肉末和芽菜","撒葱花和花生碎，拌匀食用"],
+    pigComment: "一碗面吃出百味人生！芝麻酱和辣椒油的碰撞太绝了！小猪每次都要加双倍辣椒油！",
+    source: { platform: "B站", likes: "89.6万", saves: "47.2万" },
+    imagePrompt: "dan dan mian Sichuan noodles, thin wheat noodles in a rich reddish sesame and chili sauce, topped with crispy minced pork and preserved vegetables, chopped scallion and peanuts, close-up of chopsticks lifting noodles with sauce dripping"
+  },
+  {
+    id: 73, name: "京酱肉丝", region: "京菜", emoji: "🥩🥬",
+    difficulty: "中等", time: "20分钟", spicy: 0,
+    ingredients: ["猪里脊", "甜面酱", "豆腐皮", "葱", "黄瓜", "姜", "料酒", "淀粉"],
+    steps: ["里脊肉切丝，加料酒、淀粉、蛋清腌15分钟","锅中宽油滑熟肉丝捞出","留底油，下甜面酱小火炒出酱香","倒入肉丝翻炒裹酱","豆腐皮铺平，放肉丝、葱丝、黄瓜丝卷着吃"],
+    pigComment: "卷着吃才过瘾！甜面酱裹着嫩肉丝配脆葱丝，咬一口层次感爆炸！小猪能卷十个不停嘴！",
+    source: { platform: "抖音", likes: "112.4万", saves: "58.7万" },
+    imagePrompt: "jing jiang rou si Beijing sauce shredded pork, tender pork strips coated in glossy dark sweet bean sauce, served with thin tofu skin wraps, julienned cucumber and scallion whites, one wrap being rolled up showing the filling"
+  },
+  {
+    id: 74, name: "葱油拌面", region: "家常", emoji: "🍝🧅",
+    difficulty: "简单", time: "15分钟", spicy: 0,
+    ingredients: ["面条", "葱", "生抽", "老抽", "糖", "香油"],
+    steps: ["大量小葱切段备用","锅中多油小火慢慢炸葱至深棕色酥脆","调汁：生抽、老抽、糖、少许开水混合","面条煮熟捞出","浇上葱油和调味汁，拌匀即可"],
+    pigComment: "最简单的面却最让人上瘾！葱油的焦香能把小猪的馋虫全勾出来！深夜一碗葱油面治愈一切！",
+    source: { platform: "小红书", likes: "356.7万", saves: "278.4万" },
+    imagePrompt: "cong you ban mian scallion oil noodles, glistening noodles coated in dark caramelized scallion oil, deeply browned crispy fried scallion bits scattered on top, simple but irresistible, chopsticks pulling noodles upward, oil dripping, midnight snack vibes"
+  },
+  {
+    id: 75, name: "红烧茄子", region: "家常", emoji: "🍆🔥",
+    difficulty: "简单", time: "20分钟", spicy: 0,
+    ingredients: ["茄子", "大蒜", "姜", "葱", "生抽", "老抽", "糖", "醋", "淀粉"],
+    steps: ["茄子切滚刀块，盐腌10分钟挤水","锅中多油煎茄子至两面金黄","另起锅炒香蒜末姜末","加生抽、老抽、糖、醋、水调成汁","倒入茄子烧至入味，勾薄芡撒葱花"],
+    pigComment: "茄子界的天花板！软糯到入口即化！小猪觉得茄子吸满汤汁的那一刻就是世界上最幸福的食物！",
+    source: { platform: "抖音", likes: "198.5万", saves: "123.6万" },
+    imagePrompt: "hong shao qie zi braised eggplant, soft glossy eggplant chunks in a rich dark soy-based sauce, caramelized and glistening, garnished with scallion, served on a white plate, comfort home cooking"
+  },
+  {
+    id: 76, name: "黄焖鸡米饭", region: "鲁菜", emoji: "🍗🍚",
+    difficulty: "简单", time: "30分钟", spicy: 1,
+    ingredients: ["鸡腿", "青椒", "土豆", "香菇", "姜", "大蒜", "生抽", "老抽", "料酒", "糖"],
+    steps: ["鸡腿剁小块焯水洗净","锅中油热，下姜蒜爆香，放鸡块煎至微黄","加生抽、老抽、料酒、糖翻炒上色","加入土豆块、香菇和热水没过食材","大火烧开转小火焖20分钟","加青椒翻炒收汁，配米饭食用"],
+    pigComment: "国民快餐在家也能做！鸡肉软烂入味，汤汁拌饭绝绝子！小猪觉得比外面的还好吃十倍！",
+    source: { platform: "抖音", likes: "445.2万", saves: "267.8万" },
+    imagePrompt: "huang men ji braised chicken with rice, golden-brown braised chicken pieces with soft potato chunks and shiitake mushrooms in a thick savory sauce, served in a clay pot next to a bowl of steamed white rice, comfort fast food style"
+  },
+  {
+    id: 77, name: "豉汁蒸排骨", region: "粤菜", emoji: "🥩🫘",
+    difficulty: "简单", time: "25分钟", spicy: 0,
+    ingredients: ["排骨", "豆豉", "大蒜", "姜", "生抽", "蚝油", "淀粉", "红椒"],
+    steps: ["排骨剁小段，冲洗干净泡去血水","加豆豉、蒜末、姜末、生抽、蚝油、淀粉、油腌20分钟","放入盘中铺平","蒸锅大火蒸15分钟","出锅撒红椒圈和葱花"],
+    pigComment: "茶楼经典！豆豉香气渗透到每一块排骨里！小猪去喝早茶必点这道！现在自己蒸更划算！",
+    source: { platform: "小红书", likes: "87.3万", saves: "62.1万" },
+    imagePrompt: "chi zhi zheng pai gu steamed spare ribs with black bean sauce, small rib segments glistening with dark fermented black bean sauce and minced garlic, red chili rings on top, steamed in a dim sum bamboo steamer, classic Cantonese yum cha"
+  },
+  {
+    id: 78, name: "煲仔饭", region: "粤菜", emoji: "🍚🥘",
+    difficulty: "中等", time: "35分钟", spicy: 0,
+    ingredients: ["米饭", "腊肠", "腊肉", "鸡蛋", "青菜", "生抽", "老抽", "糖", "香油"],
+    steps: ["砂锅内壁刷油，米洗净加水浸泡30分钟","大火烧开转最小火焖15分钟","腊肠腊肉切片铺在饭上，打入鸡蛋","盖盖继续焖5分钟","关火后沿锅边淋入混合好的酱油汁","焖2分钟，放入烫熟的青菜，刮起锅巴拌匀"],
+    pigComment: "锅巴才是灵魂！焦香酥脆的锅巴蘸着酱油汁，小猪能把整个砂锅刮干净！腊味飘香满屋子！",
+    source: { platform: "B站", likes: "156.7万", saves: "98.4万" },
+    imagePrompt: "claypot rice bao zai fan, sizzling in a traditional clay pot, sliced Chinese sausage and cured meat on top of rice, a sunny-side-up egg in center, dark soy sauce drizzled, crispy golden rice crust visible on edges, blanched bok choy garnish, steam rising"
+  },
+  {
+    id: 79, name: "大盘鸡", region: "西北菜", emoji: "🍗🫑",
+    difficulty: "中等", time: "40分钟", spicy: 2,
+    ingredients: ["鸡腿", "土豆", "青椒", "红椒", "洋葱", "干辣椒", "花椒", "姜", "大蒜", "生抽", "老抽", "面条"],
+    steps: ["鸡腿剁块焯水，土豆切大块","锅中炒糖色，下鸡块翻炒上色","加姜蒜、干辣椒、花椒爆香","加生抽、老抽、料酒调味","倒入热水没过食材，加土豆大火烧开转小火炖20分钟","加青红椒和洋葱翻炒收汁，配宽面条拌汤汁吃"],
+    pigComment: "新疆饭馆的灵魂！鸡肉酥烂土豆绵软，但面条蘸汤才是真正的主角！小猪光吃面就能吃两盘！",
+    source: { platform: "抖音", likes: "378.9万", saves: "198.6万" },
+    imagePrompt: "da pan ji big plate chicken, a massive plate of braised chicken chunks with soft potato wedges, green and red pepper slices, wide hand-pulled belt noodles underneath soaking up the rich spicy sauce, hearty northwestern Chinese feast"
+  },
+  {
+    id: 80, name: "羊肉泡馍", region: "西北菜", emoji: "🐑🫓",
+    difficulty: "复杂", time: "60分钟", spicy: 0,
+    ingredients: ["羊肉", "馍", "粉丝", "木耳", "大蒜", "姜", "葱", "香菜"],
+    steps: ["羊肉冷水下锅焯水去膻","另起锅加清水、姜葱、香料炖羊肉1.5小时","馍掰成黄豆大小的碎块","羊肉汤烧开，下馍粒、粉丝、木耳煮3分钟","盛入碗中铺上羊肉片","配糖蒜、辣酱和香菜食用"],
+    pigComment: "掰馍是仪式感！越碎越好吃！小猪每次掰馍都掰得超级细，泡在浓汤里吸满汁，太幸福了！",
+    imagePrompt: "yang rou pao mo lamb soup with broken bread, rich milky lamb broth with tiny hand-torn bread pieces soaking in soup, tender lamb slices, glass noodles, wood ear mushrooms, garnished with cilantro and chili oil, traditional Shaanxi ceramic bowl"
+  },
+  {
+    id: 81, name: "过桥米线", region: "云贵菜", emoji: "🍜🌿",
+    difficulty: "中等", time: "30分钟", spicy: 0,
+    ingredients: ["米线", "鸡胸肉", "鹌鹑蛋", "豆腐皮", "韭菜", "豆芽", "鸡汤"],
+    steps: ["鸡胸肉切薄片，各种蔬菜洗净切好","熬制浓郁鸡汤，表面要有一层油封住热量","大碗盛入滚烫鸡汤","依次放入生肉片（汤会烫熟）、鹌鹑蛋","再放入米线和蔬菜","轻轻搅拌，鲜美即食"],
+    pigComment: "先涮肉再下菜的仪式感太棒了！鸡汤鲜美到小猪想把碗都舔干净！在昆明吃过一次就念念不忘！",
+    source: { platform: "小红书", likes: "134.5万", saves: "89.7万" },
+    imagePrompt: "guo qiao mi xian crossing bridge rice noodles, a large bowl of milky golden chicken broth with a layer of oil on surface, surrounded by small plates of raw thin-sliced chicken, quail eggs, vegetables, tofu skin, rice noodles ready to be dipped in, Yunnan cuisine spread"
+  },
+  {
+    id: 82, name: "酸辣粉", region: "川菜", emoji: "🍜🌶️",
+    difficulty: "简单", time: "15分钟", spicy: 2,
+    ingredients: ["红薯粉", "花生", "黄豆", "醋", "辣椒油", "大蒜", "葱", "香菜", "芽菜"],
+    steps: ["红薯粉提前泡软","花生和黄豆分别炸酥","碗底放蒜泥、辣椒油、醋、生抽、花椒粉","粉条煮熟连汤倒入碗中","撒上花生碎、黄豆、芽菜、香菜、葱花"],
+    pigComment: "酸到皱眉辣到冒汗但就是停不下来！红薯粉Q弹爽滑！小猪每次都要加醋加到不能再加！",
+    source: { platform: "抖音", likes: "234.8万", saves: "156.3万" },
+    imagePrompt: "suan la fen sour and spicy sweet potato noodles, translucent bouncy red sweet potato noodles in a dark vinegar and chili oil broth, topped with crushed peanuts, fried soybeans, preserved vegetables, cilantro, fiery red oil pooling on surface"
+  },
+  {
+    id: 83, name: "啤酒鸭", region: "家常", emoji: "🦆🍺",
+    difficulty: "中等", time: "45分钟", spicy: 1,
+    ingredients: ["鸭", "啤酒", "姜", "大蒜", "干辣椒", "八角", "桂皮", "生抽", "老抽", "糖"],
+    steps: ["鸭肉剁块焯水洗净","锅中少油煎鸭块至出油微黄","加姜蒜、干辣椒、八角、桂皮爆香","倒入一整瓶啤酒","加生抽、老抽、糖调味","大火烧开转小火炖30分钟至鸭肉酥烂","大火收汁即可"],
+    pigComment: "啤酒去膻增香！鸭肉炖到酥烂入味！小猪觉得啤酒的麦芽香和鸭肉简直是天作之合！",
+    source: { platform: "B站", likes: "76.8万", saves: "43.2万" },
+    imagePrompt: "pi jiu ya beer braised duck, dark brown braised duck pieces in a rich beer-infused sauce with star anise and cinnamon bark visible, glistening and tender, served in a deep plate, empty beer bottle in background"
+  },
+  {
+    id: 84, name: "油焖大虾", region: "鲁菜", emoji: "🦐🔥",
+    difficulty: "简单", time: "15分钟", spicy: 0,
+    ingredients: ["大虾", "葱", "姜", "料酒", "糖", "醋", "生抽", "番茄酱"],
+    steps: ["大虾剪须去虾线，背部剪开","锅中油热，大虾煎至两面红","加姜丝、葱段爆香","加料酒、糖、醋、生抽、番茄酱和少许水","大火收汁至浓稠裹满虾身","出锅码盘"],
+    pigComment: "红亮油润超有食欲！大虾连壳都入味了！小猪吃油焖大虾就是要大口吃，吃完吮指才过瘾！",
+    source: { platform: "抖音", likes: "189.4万", saves: "94.7万" },
+    imagePrompt: "you men da xia oil-braised prawns, large whole prawns glistening in a glossy sweet and savory red sauce, bright red shells, scallion garnish, arranged in a fan pattern on an oval plate, each prawn plump and succulent"
+  },
+  {
+    id: 85, name: "松鼠鳜鱼", region: "苏菜", emoji: "🐟🐿️",
+    difficulty: "复杂", time: "40分钟", spicy: 0,
+    ingredients: ["鳜鱼", "番茄酱", "糖", "醋", "淀粉", "松子", "豌豆", "虾仁"],
+    steps: ["鳜鱼去骨，鱼肉切交叉花刀不切断鱼皮","拍干淀粉，抖去多余粉","油温七成热，提鱼尾下锅炸至金黄定型","炸至酥脆捞出摆盘","锅中调番茄酱、糖、醋、水烧成糖醋汁","浇在鱼身上，撒松子和豌豆"],
+    pigComment: "宴席上的C位！炸好的鱼身张开像松鼠尾巴！淋汁那一刻发出嗞嗞声，全桌都在鼓掌！小猪崇拜！",
+    imagePrompt: "song shu gui yu squirrel-shaped mandarin fish, whole deep-fried fish scored into a blooming pattern resembling a squirrel tail, bright orange-red sweet and sour sauce poured over creating sizzling sound, pine nuts and green peas scattered, spectacular banquet presentation"
+  },
+  {
+    id: 86, name: "铁锅炖大鹅", region: "东北菜", emoji: "🪿🫕",
+    difficulty: "中等", time: "60分钟", spicy: 1,
+    ingredients: ["鹅", "土豆", "粉条", "酸菜", "八角", "桂皮", "姜", "大蒜", "生抽", "老抽"],
+    steps: ["鹅肉剁大块焯水","锅中炒糖色，下鹅肉翻炒上色","加姜蒜、八角、桂皮爆香","加生抽老抽调味，倒入热水","大火烧开转小火炖40分钟","加土豆块和酸菜继续炖15分钟","最后下粉条煮5分钟"],
+    pigComment: "东北铁锅炖系列的王者！鹅肉紧实有嚼劲，酸菜解腻！小猪冬天最想围着大铁锅吃这个！暖到心里！",
+    source: { platform: "抖音", likes: "156.3万", saves: "78.9万" },
+    imagePrompt: "tie guo dun da e iron pot stewed goose, a large cast iron pot filled with braised goose chunks, potato pieces, sauerkraut, and glass noodles in a rich brown broth, rustic northeastern countryside kitchen setting, steam and warmth"
+  },
+  {
+    id: 87, name: "佛跳墙", region: "闽菜", emoji: "🏺✨",
+    difficulty: "复杂", time: "120分钟", spicy: 0,
+    ingredients: ["鲍鱼", "海参", "鱼翅", "花胶", "瑶柱", "鸡", "排骨", "香菇"],
+    steps: ["各种干货提前泡发处理","鸡和排骨熬制高汤","所有食材分层码入坛中","倒入高汤和料酒","封口小火慢炖2-3小时","开坛即飘满屋浓香"],
+    pigComment: "传说中的满汉全席头菜！一坛子全是宝贝！小猪这辈子吃过一次就再也忘不了那个鲜字！",
+    imagePrompt: "fo tiao qiang Buddha jumps over the wall, a traditional sealed clay jar being opened revealing a luxurious golden broth with abalone, sea cucumber, fish maw, scallops, and mushrooms, steam billowing out dramatically, imperial-level Fujian cuisine"
+  },
+  {
+    id: 88, name: "贵州酸汤鱼", region: "云贵菜", emoji: "🐟🍅",
+    difficulty: "中等", time: "30分钟", spicy: 2,
+    ingredients: ["草鱼", "西红柿", "酸汤", "木姜子", "姜", "大蒜", "葱", "香菜", "小米椒"],
+    steps: ["草鱼切块加盐和料酒腌10分钟","西红柿炒出红汤","加入贵州红酸汤烧开","放入鱼块煮至变白","加木姜子油提香","出锅撒香菜和小米椒圈"],
+    pigComment: "贵州人的灵魂！这个酸和醋酸完全不一样！发酵出来的酸鲜无比！小猪在贵阳吃到人生新高度！",
+    source: { platform: "抖音", likes: "167.8万", saves: "89.3万" },
+    imagePrompt: "Guizhou suan tang yu sour soup fish, bright crimson-red fermented tomato sour broth with whole fish pieces, unique woody aroma from mu jiang zi oil, fresh tomato chunks, cilantro, sliced chili peppers floating, served in a traditional clay pot"
+  },
+  {
+    id: 89, name: "鸡公煲", region: "家常", emoji: "🍗🫕",
+    difficulty: "中等", time: "35分钟", spicy: 2,
+    ingredients: ["鸡腿", "土豆", "洋葱", "青椒", "干辣椒", "豆瓣酱", "大蒜", "姜", "啤酒"],
+    steps: ["鸡腿剁块焯水，土豆切块","锅中炒香豆瓣酱和干辣椒","下鸡块大火翻炒上色","加姜蒜、生抽、老抽调味","倒入半瓶啤酒和土豆，焖煮20分钟","加洋葱和青椒翻炒收汁"],
+    pigComment: "饭店最火的砂锅菜！酱香浓郁超级下饭！小猪每次点外卖都忍不住点鸡公煲，现在学会自己做更爽！",
+    source: { platform: "小红书", likes: "198.6万", saves: "134.5万" },
+    imagePrompt: "ji gong bao chicken clay pot, a bubbling sizzling clay pot filled with braised chicken chunks, soft potato cubes, onion wedges, and green peppers in a thick spicy dark sauce, restaurant style presentation"
+  },
+  {
+    id: 90, name: "水煮虾", region: "家常", emoji: "🦐💧",
+    difficulty: "简单", time: "10分钟", spicy: 0,
+    ingredients: ["大虾", "姜", "葱", "料酒", "盐"],
+    steps: ["大虾剪须去虾线，洗净","锅中水烧开，加姜片、葱段、料酒","大虾下锅煮至变红弯曲（约2-3分钟）","捞出沥水装盘","配蘸料食用：生抽+醋+蒜末+姜末"],
+    pigComment: "最简单最鲜甜！好虾不需要复杂做法！小猪觉得水煮虾蘸着蒜醋汁吃就是人间至味！",
+    source: { platform: "小红书", likes: "89.4万", saves: "56.7万" },
+    imagePrompt: "shui zhu xia boiled whole shrimp, plump bright orange-red boiled shrimp piled on a plate, perfectly curled, a small dipping bowl of ginger vinegar garlic sauce beside it, clean simple presentation, fresh seafood"
+  },
+  {
+    id: 91, name: "干煸四季豆", region: "川菜", emoji: "🫛🌶️",
+    difficulty: "简单", time: "15分钟", spicy: 1,
+    ingredients: ["四季豆", "猪肉末", "芽菜", "干辣椒", "花椒", "大蒜", "姜", "生抽"],
+    steps: ["四季豆掐头去筋撕成段","锅中多油，四季豆炸至表皮起皱捞出","留底油炒香肉末至酥","加干辣椒、花椒、姜蒜、芽菜爆香","倒入四季豆大火翻炒","加生抽调味出锅"],
+    pigComment: "干煸到起虎皮才好吃！四季豆吸满了肉末和芽菜的香气！小猪觉得这是下饭蔬菜里的no.1！",
+    source: { platform: "B站", likes: "67.8万", saves: "38.9万" },
+    imagePrompt: "gan bian si ji dou dry-fried green beans, wrinkled blistered green beans stir-fried with crispy minced pork, preserved vegetables, dried red chilies, and Sichuan peppercorns, dry fragrant texture, served on a round plate"
+  },
+  {
+    id: 92, name: "蛋黄焗南瓜", region: "家常", emoji: "🎃🥚",
+    difficulty: "中等", time: "20分钟", spicy: 0,
+    ingredients: ["南瓜", "咸蛋黄", "淀粉", "糖", "盐"],
+    steps: ["南瓜去皮切条，裹薄淀粉","油炸至金黄酥脆捞出","咸蛋黄蒸熟压碎","锅中少油小火炒蛋黄至起泡","倒入南瓜条快速翻炒裹匀蛋黄","金沙状态出锅"],
+    pigComment: "咸蛋黄裹满南瓜的那一刻太惊艳了！金沙效果闪闪发光！小猪每次都要把盘子里的蛋黄渣都扫干净！",
+    source: { platform: "小红书", likes: "145.2万", saves: "98.7万" },
+    imagePrompt: "dan huang ju nan gua salted egg yolk pumpkin, golden pumpkin strips coated in a sandy crumbly salted egg yolk crust, each piece shimmering with golden sand-like texture, stacked on a plate, luxurious golden tones"
+  },
+  {
+    id: 93, name: "泡椒凤爪", region: "川菜", emoji: "🐔🌶️",
+    difficulty: "简单", time: "20分钟（+腌4小时）", spicy: 2,
+    ingredients: ["鸡爪", "泡椒", "花椒", "八角", "姜", "大蒜", "醋", "料酒", "白糖"],
+    steps: ["鸡爪剪指甲对半切，冷水下锅焯水","另起锅加水、八角、花椒、姜片煮鸡爪15分钟","捞出冰水浸泡至完全冷却","泡椒、泡椒水、蒜、醋、糖、盐调成腌汁","鸡爪放入腌汁中，冷藏腌4小时以上"],
+    pigComment: "追剧零食之王！酸辣脆爽越吃越上瘾！小猪的冰箱里常年备着一盆泡椒凤爪，随时开吃！",
+    source: { platform: "小红书", likes: "267.8万", saves: "187.3万" },
+    imagePrompt: "pao jiao feng zhua pickled pepper chicken feet, plump pale chicken feet in a clear spicy pickled pepper brine with bright yellow and red pickled peppers, garlic cloves, in a glass container, tangy and crunchy snack"
+  },
+  {
+    id: 94, name: "凉拌黄瓜", region: "家常", emoji: "🥒🥢",
+    difficulty: "简单", time: "5分钟", spicy: 1,
+    ingredients: ["黄瓜", "大蒜", "干辣椒", "醋", "生抽", "香油", "糖", "盐"],
+    steps: ["黄瓜拍碎切段","蒜末、干辣椒碎用热油泼出香味","加醋、生抽、香油、糖、盐调汁","浇在黄瓜上拌匀","冷藏10分钟更爽口"],
+    pigComment: "5分钟搞定的开胃神器！拍黄瓜的时候最解压！小猪夏天天天吃这个，清爽到飞起！",
+    source: { platform: "抖音", likes: "456.7万", saves: "312.4万" },
+    imagePrompt: "liang ban huang gua smashed cucumber salad, roughly smashed cucumber chunks drizzled with glistening chili oil and garlic sauce, red chili flakes, sesame seeds, refreshing and crunchy, simple white plate, summer appetizer"
+  },
+  {
+    id: 95, name: "红烧牛腩", region: "家常", emoji: "🥩🫕",
+    difficulty: "中等", time: "90分钟", spicy: 0,
+    ingredients: ["牛腩", "土豆", "胡萝卜", "八角", "桂皮", "姜", "葱", "生抽", "老抽", "料酒"],
+    steps: ["牛腩切块冷水焯水去浮沫","锅中炒糖色至琥珀色","下牛腩翻炒裹色","加姜葱、八角、桂皮、生抽、老抽、料酒","加开水没过牛腩，大火烧开转小火炖60分钟","加土豆和胡萝卜继续炖20分钟","大火收汁"],
+    pigComment: "慢炖才出真味道！牛腩炖到用筷子一夹就断！小猪觉得等待的两小时绝对值得，配面条更绝！",
+    source: { platform: "B站", likes: "134.5万", saves: "89.6万" },
+    imagePrompt: "hong shao niu nan red braised beef brisket, fall-apart tender beef brisket chunks with soft potato and carrot pieces in a thick dark glossy braising sauce, star anise and cinnamon visible, served in a deep clay pot"
+  },
+  {
+    id: 96, name: "铁板豆腐", region: "家常", emoji: "🫘🔥",
+    difficulty: "简单", time: "10分钟", spicy: 1,
+    ingredients: ["豆腐", "鸡蛋", "大蒜", "小米椒", "葱", "孜然", "辣椒粉", "生抽"],
+    steps: ["豆腐切厚片，裹薄蛋液","平底锅刷油，小火煎豆腐至两面金黄","调汁：生抽、蚝油、糖、水混合","淋在豆腐上，小火收至微干","撒蒜末、小米椒、孜然粉、辣椒粉","大火爆香，撒葱花出锅"],
+    pigComment: "路边摊的味道在家也能做！外焦里嫩加上孜然香太上头了！小猪每次路过铁板摊都走不动道！",
+    source: { platform: "抖音", likes: "345.6万", saves: "234.5万" },
+    imagePrompt: "tie ban dou fu iron plate tofu, golden pan-fried tofu slices sizzling on a hot iron plate, drizzled with savory sauce, sprinkled with cumin, chili powder, minced garlic and green scallion, street food vibes, smoke and sizzle"
+  },
+  {
+    id: 97, name: "照烧鸡腿饭", region: "家常", emoji: "🍗🍚",
+    difficulty: "简单", time: "20分钟", spicy: 0,
+    ingredients: ["鸡腿", "生抽", "蜂蜜", "味啉", "糖", "西兰花", "米饭"],
+    steps: ["鸡腿去骨，皮面朝下用叉子扎孔","平底锅不放油，皮面朝下煎至金黄出油","翻面煎至八成熟","倒入照烧汁（生抽、蜂蜜、味啉、糖）","小火收汁至浓稠裹满鸡腿","切片铺在米饭上，配西兰花"],
+    pigComment: "日式快餐在家做！鸡皮煎到焦脆浇上照烧汁太无敌了！小猪觉得比吉野家的还好吃！",
+    source: { platform: "小红书", likes: "267.3万", saves: "198.4万" },
+    imagePrompt: "teriyaki chicken leg rice bowl, sliced golden-brown chicken thigh with crispy skin glazed in thick glossy teriyaki sauce, placed over steamed white rice, blanched broccoli and pickled ginger on the side, Japanese donburi style"
+  },
+  {
+    id: 98, name: "糖醋虾", region: "家常", emoji: "🦐🍬",
+    difficulty: "简单", time: "15分钟", spicy: 0,
+    ingredients: ["大虾", "番茄酱", "糖", "醋", "生抽", "淀粉", "姜", "葱"],
+    steps: ["大虾去虾线，背部剪开","虾裹薄淀粉","油温六成热炸至金红酥脆","锅中留底油，加番茄酱、糖、醋、生抽烧成糖醋汁","倒入炸虾快速翻炒裹汁","撒葱花出锅"],
+    pigComment: "酸甜酥脆一口一个根本停不下来！小猪觉得炸过的虾壳都变得酥脆可吃，连壳带肉一起嚼！",
+    imagePrompt: "tang cu xia sweet and sour shrimp, crispy golden battered whole shrimp coated in a glossy bright orange-red sweet and sour sauce, scallion garnish, each shrimp glistening, piled high on a plate"
+  },
+  {
+    id: 99, name: "毛氏红烧肉", region: "湘菜", emoji: "🥩🔴",
+    difficulty: "中等", time: "60分钟", spicy: 1,
+    ingredients: ["五花肉", "干辣椒", "八角", "桂皮", "姜", "大蒜", "生抽", "老抽", "糖", "料酒"],
+    steps: ["五花肉切大块焯水","锅中炒糖色至深琥珀","下五花肉翻炒上色","加姜蒜、干辣椒、八角、桂皮","加生抽、老抽、料酒和开水","大火烧开转小火慢炖50分钟","大火收汁至浓稠"],
+    pigComment: "伟人最爱的红烧肉！比普通版多了辣椒的香气！入口即化肥而不腻！小猪觉得这才是红烧肉的终极版！",
+    source: { platform: "B站", likes: "187.3万", saves: "102.6万" },
+    imagePrompt: "Mao shi hong shao rou Chairman Mao style red braised pork, large cubes of caramelized pork belly with a deep reddish-brown glaze, dried red chilies visible, rich thick sauce, traditional Hunan style, served in a deep bowl"
+  },
+  {
+    id: 100, name: "烤羊肉串", region: "西北菜", emoji: "🍢🐑",
+    difficulty: "简单", time: "20分钟", spicy: 2,
+    ingredients: ["羊肉", "洋葱", "孜然", "辣椒粉", "盐", "花椒粉"],
+    steps: ["羊肉切2cm方块，加洋葱碎、盐腌30分钟","穿入竹签，肥瘦相间","烤箱230度或炭火烤","烤5分钟翻面","撒大量孜然、辣椒粉、花椒粉","再烤3分钟至边缘微焦"],
+    pigComment: "夏天配啤酒的灵魂搭档！孜然和羊肉的组合是人类最伟大的发明！小猪一次能吃20串不带停的！",
+    source: { platform: "抖音", likes: "278.9万", saves: "134.5万" },
+    imagePrompt: "roasted lamb skewers yang rou chuan, sizzling lamb cubes on bamboo skewers with charred edges, heavily dusted with cumin seeds and red chili powder, fat dripping and sizzling on charcoal grill, nighttime street food atmosphere"
+  },
+  {
+    id: 101, name: "蒜蓉西兰花", region: "家常", emoji: "🥦🧄",
+    difficulty: "简单", time: "8分钟", spicy: 0,
+    ingredients: ["西兰花", "大蒜", "蚝油", "盐"],
+    steps: ["西兰花掰小朵，焯水1分钟捞出","锅中油热，爆香大量蒜末","下西兰花大火快炒","加蚝油和少许盐调味","翻炒均匀即可出锅"],
+    pigComment: "减脂期小猪的救命菜！3分钟出锅！蒜香让本来平平无奇的西兰花变得超好吃！健康又美味！",
+    source: { platform: "小红书", likes: "178.9万", saves: "145.6万" },
+    imagePrompt: "garlic stir-fried broccoli, bright vivid green broccoli florets glistening with oyster sauce and golden minced garlic, quick wok-fried with visible wok hei, healthy and vibrant, clean simple plating"
+  },
+  {
+    id: 102, name: "东北乱炖", region: "东北菜", emoji: "🥘🫕",
+    difficulty: "简单", time: "30分钟", spicy: 0,
+    ingredients: ["五花肉", "白菜", "土豆", "粉条", "玉米", "排骨", "豆腐"],
+    steps: ["排骨和五花肉焯水","锅中炒肉至出油","加入土豆、玉米段翻炒","倒入开水大火煮开","加白菜、豆腐、粉条","小火炖20分钟至所有食材软烂","调味出锅"],
+    pigComment: "东北人的哲学就是啥都能炖！看着乱七八糟但每样食材都吸满了汤汁！小猪冬天最爱这一大锅！",
+    imagePrompt: "dong bei luan dun northeast big stew, a massive pot filled with pork belly, napa cabbage, potato chunks, corn segments, glass noodles, and tofu all simmered together in a rich broth, rustic hearty countryside comfort food"
+  },
+  {
+    id: 103, name: "椒麻鸡", region: "川菜", emoji: "🐔🌿",
+    difficulty: "简单", time: "30分钟", spicy: 2,
+    ingredients: ["鸡腿", "花椒", "青花椒", "葱", "姜", "生抽", "醋", "香油", "芝麻"],
+    steps: ["鸡腿冷水下锅加姜葱煮熟","捞出冰水浸泡","切块摆盘","大量花椒和青花椒炸油，加葱花","调入生抽、醋、糖、鸡汤","浇在鸡块上，撒芝麻"],
+    pigComment: "麻到嘴唇发颤但就是停不了！青花椒的清香太绝了！小猪每次吃完嘴巴都在跳舞！",
+    source: { platform: "抖音", likes: "134.6万", saves: "72.3万" },
+    imagePrompt: "jiao ma ji Sichuan numbing spicy chicken, cold poached chicken pieces drenched in a fragrant green and red Sichuan peppercorn oil with scallion, sesame seeds, intensely aromatic and numbing, dark greenish tinged oil"
+  },
+  {
+    id: 104, name: "白灼生菜", region: "粤菜", emoji: "🥬💧",
+    difficulty: "简单", time: "5分钟", spicy: 0,
+    ingredients: ["生菜", "大蒜", "蚝油", "生抽", "糖"],
+    steps: ["水烧开加少许油和盐","生菜焯水30秒捞出摆盘","蒜末用热油爆香","加蚝油、生抽、糖和少许水烧成蚝油汁","淋在生菜上即可"],
+    pigComment: "粤菜的灵魂在于食材本味！脆嫩的生菜配蚝油汁就是大道至简！小猪觉得吃蔬菜也可以很幸福！",
+    imagePrompt: "bai zhuo sheng cai blanched lettuce with oyster sauce, bright green crisp whole lettuce leaves arranged elegantly, drizzled with a glossy dark oyster sauce and golden fried garlic bits, clean minimalist Cantonese presentation"
+  },
+  {
+    id: 105, name: "肉末茄子", region: "家常", emoji: "🍆🥩",
+    difficulty: "简单", time: "15分钟", spicy: 1,
+    ingredients: ["茄子", "猪肉末", "大蒜", "姜", "葱", "豆瓣酱", "生抽", "糖"],
+    steps: ["茄子切条，用盐腌出水挤干","锅中多油煎茄子软塌捞出","留底油炒香肉末","加豆瓣酱、蒜末、姜末炒出红油","倒入茄子翻炒裹酱","加少许水焖2分钟，收汁撒葱花"],
+    pigComment: "肉末和茄子是天生一对！茄子吸满了肉香和酱香！小猪觉得这就是家的味道，百吃不厌！",
+    source: { platform: "抖音", likes: "223.4万", saves: "156.7万" },
+    imagePrompt: "rou mo qie zi minced pork with eggplant, soft melting eggplant strips mixed with savory minced pork in a dark chili bean paste sauce, glistening and richly flavored, garnished with scallion, classic home cooking"
+  },
+  {
+    id: 106, name: "麻辣小龙虾", region: "家常", emoji: "🦞🌶️",
+    difficulty: "中等", time: "30分钟", spicy: 3,
+    ingredients: ["小龙虾", "干辣椒", "花椒", "大蒜", "姜", "葱", "啤酒", "豆瓣酱"],
+    steps: ["小龙虾刷洗干净，去虾线","锅中多油爆香大量干辣椒和花椒","加姜蒜、豆瓣酱炒出红油","下小龙虾大火翻炒至变红","倒入啤酒和调味料","加盖焖煮10分钟","大火收汁，撒葱花"],
+    pigComment: "夏天没有小龙虾的夜晚是不完整的！麻辣鲜香吸吮虾头的时候是最快乐的！小猪能吃3斤不带停！",
+    source: { platform: "抖音", likes: "567.8万", saves: "345.2万" },
+    imagePrompt: "ma la xiao long xia spicy crawfish, a mountain of bright red spicy crawfish piled high, coated in glistening chili oil with dried chilies and Sichuan peppercorns, beer bottles in background, nightlife summer eating scene"
+  },
+  {
+    id: 107, name: "葱姜炒蟹", region: "粤菜", emoji: "🦀🧅",
+    difficulty: "中等", time: "20分钟", spicy: 0,
+    ingredients: ["螃蟹", "葱", "姜", "料酒", "生抽", "糖", "淀粉"],
+    steps: ["螃蟹处理干净，对半切开","切口处蘸干淀粉锁住蟹黄","锅中油热，蟹切口朝下煎至变红","加大量姜片和葱段爆香","加料酒、生抽、糖和少许水","大火翻炒收汁"],
+    pigComment: "秋天吃蟹的最佳方式！葱姜的香和蟹的鲜完美融合！小猪吃蟹从来不嫌麻烦，一个人能啃俩小时！",
+    source: { platform: "B站", likes: "98.7万", saves: "56.4万" },
+    imagePrompt: "cong jiang chao xie ginger scallion stir-fried crab, bright red crab pieces with visible golden roe, thick scallion segments and ginger slices, glossy savory sauce coating each piece, wok-tossed action, autumn delicacy"
+  },
+  {
+    id: 108, name: "酸豆角炒肉末", region: "湘菜", emoji: "🫘🥩",
+    difficulty: "简单", time: "10分钟", spicy: 1,
+    ingredients: ["酸豆角", "猪肉末", "干辣椒", "大蒜", "姜", "生抽"],
+    steps: ["酸豆角切小丁","锅中少油炒散肉末至变色","加干辣椒、蒜末爆香","倒入酸豆角大火翻炒3分钟","加少许生抽调味即可"],
+    pigComment: "湘菜下饭王！酸豆角的酸脆配上肉末的香，小猪不开玩笑，光这一个菜能干三碗饭！",
+    source: { platform: "抖音", likes: "178.9万", saves: "123.4万" },
+    imagePrompt: "suan dou jiao chao rou mo stir-fried pickled long beans with minced pork, finely diced green pickled beans mixed with browned minced pork, dried red chili bits, quick wok-fried, classic Hunan rice accompaniment"
+  },
+  {
+    id: 109, name: "香煎豆腐", region: "家常", emoji: "🫘🔥",
+    difficulty: "简单", time: "15分钟", spicy: 0,
+    ingredients: ["豆腐", "鸡蛋", "葱", "生抽", "蚝油"],
+    steps: ["豆腐切1.5cm厚片","裹蛋液","平底锅中小火煎至两面金黄","调汁：生抽、蚝油、糖、水","淋在豆腐上小火收汁","撒葱花出锅"],
+    pigComment: "外焦里嫩！最朴实的食材最惊艳的味道！小猪觉得煎豆腐就是要慢慢煎，不着急，金黄色才最好吃！",
+    imagePrompt: "xiang jian dou fu pan-fried tofu, golden crispy exterior with soft white tofu interior visible where cut, dark savory soy glaze drizzled on top, scallion garnish, simple rustic home cooking"
+  },
+  {
+    id: 110, name: "剁椒蒸金针菇", region: "湘菜", emoji: "🍄🌶️",
+    difficulty: "简单", time: "10分钟", spicy: 2,
+    ingredients: ["金针菇", "剁椒", "大蒜", "葱", "生抽", "香油"],
+    steps: ["金针菇去根洗净，铺在盘中","铺上厚厚一层剁椒和蒜末","蒸锅大火蒸8分钟","出锅淋生抽和热油","撒葱花"],
+    pigComment: "零厨艺也能做的硬菜！金针菇吸满了剁椒的辣和鲜！小猪每次蒸一大盘5分钟就被吃光！",
+    source: { platform: "小红书", likes: "198.7万", saves: "156.3万" },
+    imagePrompt: "duo jiao zheng jin zhen gu steamed enoki mushrooms with chopped chili, a bed of white enoki mushrooms topped with a vibrant layer of red and green chopped pickled chilies and garlic, just steamed with hot oil poured over, sizzling"
+  },
+  {
+    id: 111, name: "汽锅鸡", region: "云贵菜", emoji: "🐔🫖",
+    difficulty: "中等", time: "90分钟", spicy: 0,
+    ingredients: ["鸡", "枸杞", "红枣", "姜", "葱", "盐"],
+    steps: ["鸡剁小块焯水洗净","鸡块放入汽锅中","加姜片、葱段、枸杞、红枣","不加水！利用蒸汽凝结成汤","大火蒸1.5小时","开盖加盐调味即可"],
+    pigComment: "不加一滴水全靠蒸汽！鸡汤鲜甜到灵魂颤抖！小猪在云南第一次喝到汽锅鸡就惊为天人！",
+    imagePrompt: "qi guo ji Yunnan steam pot chicken, a traditional clay steam pot with lid removed revealing crystal-clear golden chicken broth with tender chicken pieces, goji berries, and red dates, no added water pure steam condensation, ethereal steam rising"
+  },
+  {
+    id: 112, name: "糖拌西红柿", region: "家常", emoji: "🍅🍬",
+    difficulty: "简单", time: "3分钟", spicy: 0,
+    ingredients: ["西红柿", "白糖"],
+    steps: ["西红柿洗净切片","均匀撒上白糖","冷藏15分钟更佳","直接食用"],
+    pigComment: "全世界最简单的菜！但夏天冰镇过的糖拌西红柿就是无敌的存在！小猪夏天的续命水果沙拉！",
+    imagePrompt: "tang ban xi hong shi sugar-coated tomato slices, bright red juicy tomato slices arranged on a plate sprinkled with white sugar crystals, condensation drops showing it is chilled, summer refreshment, nostalgic childhood snack"
+  },
+  {
+    id: 113, name: "腐乳空心菜", region: "家常", emoji: "🥬🧱",
+    difficulty: "简单", time: "5分钟", spicy: 0,
+    ingredients: ["空心菜", "腐乳", "大蒜", "盐"],
+    steps: ["空心菜摘洗干净切段","腐乳碾碎加少许腐乳汁调匀","锅中油热爆香蒜末","大火快炒空心菜至断生","加入腐乳汁翻炒均匀","快速出锅保持翠绿"],
+    pigComment: "腐乳是神奇调味料！给普通空心菜注入了灵魂！小猪第一次吃到的时候直呼为什么没有早点发现！",
+    source: { platform: "小红书", likes: "89.4万", saves: "67.8万" },
+    imagePrompt: "fu ru kong xin cai fermented tofu sauce water spinach, vivid green water spinach stir-fried with pinkish fermented tofu sauce coating each stem, garlic bits, quick wok-fried, simple but flavor-packed"
+  },
+  {
+    id: 114, name: "蒜蓉蒸扇贝", region: "粤菜", emoji: "🐚🧄",
+    difficulty: "简单", time: "15分钟", spicy: 0,
+    ingredients: ["扇贝", "粉丝", "大蒜", "葱", "生抽", "料酒"],
+    steps: ["扇贝清洗干净取半壳","粉丝泡软剪短铺在壳里","大量蒜末炒至金黄","铺在每个扇贝上","蒸锅大火蒸5分钟","出锅淋生抽和葱花油"],
+    pigComment: "宴客神器！颜值高味道绝做法简单！蒜蓉焦香配上扇贝的鲜甜！小猪请客每次都靠这道菜撑场面！",
+    source: { platform: "小红书", likes: "167.8万", saves: "123.4万" },
+    imagePrompt: "garlic steamed scallops on half shell, plump white scallops on shells lined with glass noodles, topped with golden fried garlic, scallion and soy sauce drizzle, arranged on a steamer, elegant seafood appetizer"
+  },
+  {
+    id: 115, name: "香辣蟹", region: "川菜", emoji: "🦀🌶️",
+    difficulty: "中等", time: "25分钟", spicy: 3,
+    ingredients: ["螃蟹", "干辣椒", "花椒", "大蒜", "姜", "葱", "豆瓣酱", "料酒"],
+    steps: ["螃蟹处理干净对半切，裹薄淀粉","油锅炸至变红捞出","锅中留油，爆香大量干辣椒和花椒","加豆瓣酱、姜蒜炒出红油","下螃蟹翻炒","加料酒和调味料大火翻炒收汁","撒葱花出锅"],
+    pigComment: "吃螃蟹最过瘾的方式！辣到手舞足蹈但根本停不下来！小猪吃完壳都要吮三遍才罢休！",
+    source: { platform: "抖音", likes: "234.5万", saves: "123.7万" },
+    imagePrompt: "xiang la xie spicy stir-fried crab, bright red crab pieces tossed with a mountain of dried red chilies and Sichuan peppercorns, glistening spicy sauce, dramatic fiery presentation"
+  },
+  {
+    id: 116, name: "番茄牛腩面", region: "家常", emoji: "🍅🍜",
+    difficulty: "中等", time: "90分钟", spicy: 0,
+    ingredients: ["牛腩", "西红柿", "面条", "姜", "葱", "八角", "生抽", "盐"],
+    steps: ["牛腩切块焯水","西红柿切块炒出汁","加入牛腩翻炒","倒入开水加八角姜葱","大火烧开转小火炖60分钟","面条煮熟盛入碗中","浇上牛腩和番茄汤"],
+    pigComment: "一碗面的终极享受！番茄汤酸甜浓郁，牛腩软烂入味！小猪冬天每周都要炖一锅慢慢吃！",
+    source: { platform: "B站", likes: "167.8万", saves: "112.3万" },
+    imagePrompt: "fan qie niu nan mian tomato beef brisket noodles, rich crimson tomato broth with fall-apart tender beef chunks over wheat noodles, diced tomato pieces visible in the soup, scallion garnish, steaming bowl of comfort"
+  },
+  {
+    id: 117, name: "酱香饼", region: "家常", emoji: "🫓🫘",
+    difficulty: "中等", time: "30分钟", spicy: 1,
+    ingredients: ["面粉", "甜面酱", "豆瓣酱", "芝麻", "葱", "糖", "五香粉"],
+    steps: ["面粉加温水揉成光滑面团醒20分钟","调酱：甜面酱、豆瓣酱、糖、五香粉、油混合","面团擀薄刷油撒葱花卷起再擀平","平底锅少油烙至两面金黄","刷上酱料撒芝麻","切块食用"],
+    pigComment: "路边早餐摊的明星！酱香浓郁外酥内软！小猪每次经过都走不动道，现在自己做，随时能吃到！",
+    source: { platform: "抖音", likes: "345.6万", saves: "256.7万" },
+    imagePrompt: "jiang xiang bing sauce-flavored flatbread, golden crispy layered flatbread slathered with dark glossy bean sauce, sprinkled with sesame seeds, flaky layers visible where torn, street food breakfast, cut into triangular pieces"
+  },
+  {
+    id: 118, name: "香菇滑鸡", region: "粤菜", emoji: "🍄🍗",
+    difficulty: "简单", time: "20分钟", spicy: 0,
+    ingredients: ["鸡腿", "香菇", "生抽", "蚝油", "淀粉", "姜", "葱", "糖"],
+    steps: ["鸡腿去骨切块，加生抽、蚝油、淀粉、姜末腌15分钟","香菇切片","鸡块和香菇铺在盘中","蒸锅大火蒸12分钟","出锅撒葱花，淋少许热油"],
+    pigComment: "粤式蒸菜的精髓！鸡肉滑嫩到不可思议！香菇的鲜香渗透到每一块鸡肉里！小猪的拌饭神器！",
+    source: { platform: "小红书", likes: "98.7万", saves: "72.3万" },
+    imagePrompt: "xiang gu hua ji steamed chicken with shiitake mushrooms, silky tender chicken pieces with plump sliced shiitake mushrooms, glistening with a light savory sauce, scallion on top, classic Cantonese steamed dish in a white plate"
+  },
+  {
+    id: 119, name: "麻辣拌", region: "东北菜", emoji: "🥗🌶️",
+    difficulty: "简单", time: "10分钟", spicy: 2,
+    ingredients: ["土豆", "海带", "豆皮", "宽粉", "丸子", "生菜", "辣椒面", "花生", "芝麻"],
+    steps: ["各种蔬菜和宽粉分别焯熟","捞出沥干放入大盆","加辣椒面、花椒粉、蒜末、芝麻、花生碎","淋热油泼出香味","加生抽、醋、香油拌匀","冷吃或温吃均可"],
+    pigComment: "东北版冷麻辣烫！比热的还好吃！小猪每次都要加超多土豆和宽粉，拌完一大盆5分钟吃完！",
+    source: { platform: "小红书", likes: "456.3万", saves: "345.6万" },
+    imagePrompt: "ma la ban northeastern cold spicy mix, a large bowl overflowing with blanched potato slices, kelp strips, tofu skin, wide noodles, meatballs, lettuce, all tossed in fiery red chili oil with sesame and crushed peanuts, vibrant and appetizing cold mix"
+  },
+  {
+    id: 120, name: "虎皮青椒", region: "家常", emoji: "🫑🐯",
+    difficulty: "简单", time: "10分钟", spicy: 1,
+    ingredients: ["青椒", "大蒜", "生抽", "醋", "糖", "盐"],
+    steps: ["青椒洗净去籽不切","锅中不放油干煸青椒","用锅铲按压至表皮起虎皮纹路","盛出备用","锅中少油炒香蒜末","加生抽、醋、糖调汁","倒入青椒翻炒裹汁出锅"],
+    pigComment: "最便宜最好吃的下饭菜！干煸到起皮那一刻太有成就感了！小猪觉得虎皮青椒是穷学生的救星！",
+    source: { platform: "抖音", likes: "289.4万", saves: "198.7万" },
+    imagePrompt: "hu pi qing jiao tiger skin peppers, whole green peppers with blistered charred tiger-stripe skin pattern, glistening with a sweet soy vinegar glaze, garlic bits, smoky and fragrant, simple rustic home cooking on a white plate"
   }
 ];
 
 // All available regions
-const REGIONS = ["全部", "川菜", "粤菜", "湘菜", "京菜", "东北菜", "苏菜", "浙菜", "鲁菜", "闽菜", "徽菜", "家常"];
+const REGIONS = ["全部", "川菜", "粤菜", "湘菜", "京菜", "东北菜", "苏菜", "浙菜", "鲁菜", "闽菜", "徽菜", "西北菜", "云贵菜", "家常"];
 
 // All available ingredients
 const ALL_INGREDIENTS = [
@@ -1113,20 +1556,22 @@ const ALL_INGREDIENTS = [
   // 猪肉类
   "猪肉", "猪肉末", "五花肉", "排骨", "猪蹄", "猪肚", "猪肝", "猪血", "猪大肠", "腊肉",
   // 禽肉类
-  "鸡胸肉", "鸡腿", "鸡翅", "鸡", "鸭", "鸭血",
+  "鸡胸肉", "鸡腿", "鸡翅", "鸡", "鸡爪", "鸭", "鸭血", "鹅",
   // 牛羊肉类
   "牛肉", "牛腱子", "羊肉",
   // 水产类
-  "虾", "大虾", "鱼", "鱼头", "草鱼", "鲤鱼", "鳜鱼", "带鱼", "蛤蜊", "生蚝",
+  "虾", "大虾", "小龙虾", "鱼", "鱼头", "草鱼", "鲤鱼", "鳜鱼", "带鱼", "蛤蜊", "生蚝", "螃蟹", "扇贝", "鲍鱼", "海参",
   // 蔬菜类
   "土豆", "西红柿", "茄子", "青椒", "红椒", "白菜", "空心菜", "韭菜", "花椰菜",
   "豆芽", "黄瓜", "胡萝卜", "洋葱", "木耳", "蘑菇", "榛蘑", "粉条", "红薯", "莲藕",
   "毛肚", "马蹄", "生菜", "荷兰豆", "金针菇", "酸菜", "泡菜", "年糕", "玉米粒", "豌豆",
+  "四季豆", "南瓜", "西兰花", "海带", "豆皮", "酸豆角", "香菇", "腐乳", "香菜",
   // 主食类
-  "面条", "米饭", "方便面", "粉丝",
+  "面条", "米饭", "方便面", "粉丝", "米线", "红薯粉", "宽粉", "面粉", "馍",
   // 调味料
   "大蒜", "姜", "葱", "花椒", "干辣椒", "剁椒", "豆瓣酱", "豆豉",
   "生抽", "老抽", "料酒", "醋", "糖", "盐", "淀粉", "花生",
   "蚝油", "叉烧酱", "蜂蜜", "可乐", "龙井茶叶", "咖喱块", "椰奶",
-  "奥尔良腌料", "番茄酱", "甜面酱", "韩式辣酱", "午餐肉", "芝士", "火腿", "椒盐粉"
+  "奥尔良腌料", "番茄酱", "甜面酱", "韩式辣酱", "午餐肉", "芝士", "火腿", "椒盐粉",
+  "味啉", "啤酒", "芝麻酱", "腊肠", "八角", "桂皮", "孜然", "辣椒面", "五香粉", "咸蛋黄"
 ];
