@@ -110,14 +110,14 @@ function handleIngredientInput(e) {
 function doSearch() {
   // 模式2：必须选地区
   if (state.mode === 2 && state.selectedRegion === "全部") {
-    toast("🐷 小猪，先告诉我你想吃哪里的菜嘛～");
+    toast("🐷 小猪还没选地区呢～先选一个嘛～");
     return;
   }
 
   // 模式3：食材和地区至少选一个
   if (state.mode === 3) {
     if (state.selectedIngredients.length === 0 && state.selectedRegion === "全部") {
-      toast("🐷 小猪，至少告诉我你有什么食材或想吃哪个地区的菜嘛～");
+      toast("🐷 小猪，至少选点食材或挑个地区嘛～");
       return;
     }
   }
@@ -161,7 +161,7 @@ function renderResults(results) {
       <div class="empty-state">
         <div class="empty-emoji">🐷</div>
         <div class="empty-title">哎呀，这个组合实在想不出来…</div>
-        <div class="empty-sub">小猪换个食材或地区，我再帮你想想？</div>
+        <div class="empty-sub">小猪换个食材或地区试试？</div>
       </div>`;
     return;
   }
