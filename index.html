@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🐷 小猪今天吃什么？</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 背景装饰 -->
+<div class="float-deco">🍜</div>
+<div class="float-deco">🥟</div>
+<div class="float-deco">🌶️</div>
+<div class="float-deco">🍚</div>
+<div class="float-deco">🥢</div>
+
+<!-- ==================== 首屏：选模式 ==================== -->
+<div class="screen active" id="screen-home">
+  <div class="container">
+    <div class="logo-section">
+      <span class="piggy-mascot">🐷</span>
+      <div class="logo-title">小猪今天吃什么？</div>
+      <div class="logo-sub">解决世纪难题，一秒找到今天的菜！</div>
+    </div>
+
+    <div class="mode-cards">
+      <div class="mode-card mode-1" onclick="selectMode(1)">
+        <div class="mode-icon">🛒</div>
+        <div class="mode-text">
+          <div class="mode-title">我小猪买菜了，但不知道吃啥！</div>
+          <div class="mode-note">小猪有食材，但需要你帮忙出主意</div>
+        </div>
+      </div>
+
+      <div class="mode-card mode-2" onclick="selectMode(2)">
+        <div class="mode-icon">😋</div>
+        <div class="mode-text">
+          <div class="mode-title">我小猪没买菜，但有想吃的！</div>
+          <div class="mode-note">小猪有想法，你来告诉小猪该去买什么</div>
+        </div>
+      </div>
+
+      <div class="mode-card mode-3" onclick="selectMode(3)">
+        <div class="mode-icon">🎯</div>
+        <div class="mode-text">
+          <div class="mode-title">我小猪买菜了，也有想吃的！</div>
+          <div class="mode-note">双重条件，帮小猪找到最完美的那道菜</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== 输入屏 ==================== -->
+<div class="screen" id="screen-input">
+  <div class="container">
+    <div class="top-bar">
+      <button class="back-btn" onclick="showScreen('screen-home')">←</button>
+      <div class="page-title" id="input-title">小猪在听～</div>
+    </div>
+
+    <!-- 食材输入 -->
+    <div id="ingredient-section">
+      <div class="section-label">🥕 小猪家里有什么食材？</div>
+      <div class="ingredient-input-wrap">
+        <div class="tags-container" id="tags-container"></div>
+        <input
+          class="ingredient-input"
+          id="ingredient-input"
+          type="text"
+          placeholder="小猪买了什么？（如：鸡蛋、西红柿，按回车添加）"
+          onkeydown="handleIngredientInput(event)"
+        />
+      </div>
+      <div class="section-label" style="margin-top:12px;">⚡ 小猪常备食材</div>
+      <div class="suggestions" id="suggestions"></div>
+    </div>
+
+    <!-- 地区选择 -->
+    <div id="region-section-input">
+      <div class="section-label" id="region-section-label">🗺 偏好哪个地区的口味？</div>
+      <div class="region-pills" id="region-pills-input"></div>
+    </div>
+
+    <button class="btn-primary" onclick="doSearch()">
+      💡 帮小猪想想吃什么！
+    </button>
+  </div>
+</div>
+
+<!-- ==================== 结果屏 ==================== -->
+<div class="screen" id="screen-results">
+  <div class="container">
+    <div class="top-bar">
+      <button class="back-btn" onclick="showScreen('screen-input')">←</button>
+      <div class="page-title">🍽️ 小猪今天可以做这些！</div>
+    </div>
+
+    <div class="region-pills" id="region-pills-results" style="margin-bottom:14px;"></div>
+
+    <!-- 菜名搜索 -->
+    <div class="name-search-wrap">
+      <span class="name-search-icon">🔍</span>
+      <input class="name-search-input" id="name-search-input" type="text"
+        placeholder="按菜名搜索…"
+        oninput="filterResults()" />
+    </div>
+
+    <div class="results-header" style="margin-top:14px;">
+      <div class="results-count" id="results-count">搜索中…</div>
+      <button class="btn-copy" onclick="randomRecipe()" style="padding:6px 14px;font-size:0.8rem;">
+        🎲 随机一道
+      </button>
+    </div>
+
+    <div class="recipe-grid" id="recipe-grid"></div>
+  </div>
+</div>
+
+<!-- ==================== 详情屏 ==================== -->
+<div class="screen" id="screen-detail">
+  <div class="container">
+    <div class="top-bar">
+      <button class="back-btn" onclick="showScreen('screen-results')">←</button>
+      <div class="page-title">🍳 做法详情</div>
+    </div>
+
+    <!-- Hero -->
+    <div class="recipe-detail-hero" id="detail-hero"></div>
+
+    <!-- 小猪点评 -->
+    <div class="pig-comment" id="pig-comment"></div>
+
+    <!-- 食材 -->
+    <div class="detail-section">
+      <div class="detail-section-title">🥕 所需食材</div>
+      <div class="ingredient-list" id="detail-ingredients"></div>
+    </div>
+
+    <!-- 步骤 -->
+    <div class="detail-section">
+      <div class="detail-section-title">👨‍🍳 烹饪步骤</div>
+      <ol class="steps-list" id="detail-steps"></ol>
+    </div>
+
+    <!-- AI 生成配图 -->
+    <div class="image-prompt-section">
+      <div class="prompt-title">🎨 小猪画给你看！（AI 生成）</div>
+      <div class="ai-image-wrap" id="ai-image-wrap">
+        <div class="ai-image-loading" id="ai-image-loading">
+          <div class="loading-spinner"></div>
+          <div>小猪正在挥笔作画…</div>
+        </div>
+        <img id="ai-image" class="ai-image" style="display:none;" alt="AI生成配图"
+          onload="onImageLoad()" onerror="onImageError()" />
+        <div class="ai-image-error" id="ai-image-error" style="display:none;">
+          <div>😢 小猪今天画功欠佳，图片生成失败</div>
+          <div style="font-size:0.78rem;margin-top:6px;color:#aaa;">（需要联网才能生成图片哦）</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 再来一道 -->
+    <button class="btn-primary" onclick="randomRecipe()">
+      🎲 不想吃这个？随机换一道！
+    </button>
+  </div>
+</div>
+
+<!-- 吐司 -->
+<div class="toast" id="toast"></div>
+
+<script src="recipes.js"></script>
+<script src="app.js"></script>
+<script>
+  // 初始化结果页地区筛选（在selectRegionInResults中更新）
+  document.addEventListener("DOMContentLoaded", () => {
+    renderRegionPills("region-pills-results", true);
+  });
+
+  // 覆盖结果页地区选择行为
+  function selectRegion(region, containerId) {
+    state.selectedRegion = region;
+    if (containerId === "region-pills-results") {
+      renderRegionPills("region-pills-results", true);
+      filterResults();
+    } else {
+      renderRegionPills(containerId,
+        containerId === "region-pills-input" && state.mode === 1);
+    }
+  }
+</script>
+</body>
+</html>
