@@ -12,7 +12,7 @@ const RECIPES = [
       "水淀粉勾薄芡，撒花椒粉和葱花即可"
     ],
     pigComment: "麻辣鲜香！小猪的心头好，配白米饭能吃三碗不停嘴！🐷",
-    imagePrompt: "cute anime kawaii style illustration of mapo tofu in a ceramic bowl, vibrant red spicy sauce, silky soft tofu cubes, garnished with green onions and Sichuan pepper, studio ghibli inspired food art, pastel warm background, sparkles"
+    imagePrompt: "close-up mapo tofu in a rustic ceramic bowl, glistening fiery red chili oil pooling around trembling silky white tofu cubes, scattered minced pork, freshly ground Sichuan peppercorns releasing visible aroma, chopped scallion garnish, tiny bubbles in the sauce, 45-degree camera angle"
   },
   {
     id: 2, name: "宫保鸡丁", region: "川菜", emoji: "🥜",
@@ -27,7 +27,7 @@ const RECIPES = [
       "倒入料汁快速翻炒，加花生和黄瓜即可"
     ],
     pigComment: "糊辣荔枝味！酸甜微辣，花生脆脆的，小猪每次都忍不住偷吃花生米！",
-    imagePrompt: "cute anime kawaii illustration of kung pao chicken dish, golden fried chicken pieces, roasted peanuts, colorful dried red chilies, glossy sauce, kawaii food art style, pastel background, cute chibi food character"
+    imagePrompt: "kung pao chicken top-down view, golden seared chicken cubes tossed with crunchy roasted peanuts and dozens of dried red chilies, glossy caramel-brown sauce coating each piece, diced cucumber and carrot accents, wok hei smoke rising, served in a dark clay plate"
   },
   {
     id: 3, name: "鱼香肉丝", region: "川菜", emoji: "🥩",
@@ -42,7 +42,7 @@ const RECIPES = [
       "倒入肉丝和鱼香汁大火翻炒均匀"
     ],
     pigComment: "根本没有鱼却有鱼香味！这是川菜最神奇的地方～小猪百吃不厌！",
-    imagePrompt: "cute anime style illustration of yu xiang rou si pork shreds with wood ear mushrooms, colorful vegetables, glossy brown sauce, kawaii food art, warm pastel colors, ghibli inspired"
+    imagePrompt: "yu xiang rou si shredded pork, thin julienned pork strips with black wood ear mushrooms, bamboo shoots, and bright carrot shreds in a glossy sweet-sour-spicy garlic sauce, arranged elegantly on a white porcelain plate, drizzle of chili oil on top"
   },
   {
     id: 4, name: "回锅肉", region: "川菜", emoji: "🫕",
@@ -57,7 +57,7 @@ const RECIPES = [
       "加生抽调味，翻炒均匀出锅"
     ],
     pigComment: "灵魂在于把肉煸出灯盏窝！肥而不腻，小猪光看颜色就开始流口水了～",
-    imagePrompt: "cute anime kawaii illustration of twice-cooked pork hui guo rou, caramelized pork belly slices with green peppers, rich red sauce, sizzling in a wok, kawaii style, warm cozy colors"
+    imagePrompt: "hui guo rou twice-cooked pork belly, thin curled slices of caramelized pork with crispy edges, bright green leek segments and red fermented bean paste sauce, sizzling on a hot iron plate with visible oil splatter, wok-tossed action shot"
   },
 
   // ===== 粤菜 =====
@@ -74,7 +74,7 @@ const RECIPES = [
       "淋上蒸鱼豉油即可"
     ],
     pigComment: "粤菜的精髓！鲜甜嫩滑，浇热油那一刻小猪每次都要鼓掌～简单又高级！",
-    imagePrompt: "cute anime kawaii illustration of steamed fish on a white plate, garnished with colorful julienned ginger and green onions, glistening soy sauce, elegant and fresh, kawaii food art style, light airy background"
+    imagePrompt: "cantonese steamed whole fish on an oval white platter, translucent glistening soy sauce drizzle, julienned ginger and spring onion threads on top, hot oil just poured creating tiny sizzling bubbles, delicate and elegant presentation, side angle with fish eye visible"
   },
   {
     id: 6, name: "糖醋排骨", region: "粤菜", emoji: "🍖",
@@ -89,7 +89,7 @@ const RECIPES = [
       "撒白芝麻出锅"
     ],
     pigComment: "酸酸甜甜最好吃！小猪每次都忍不住把盘子舔干净（不是，是用勺子刮干净！）",
-    imagePrompt: "cute anime kawaii illustration of sweet and sour pork ribs, glossy caramelized sauce, golden crispy ribs, sesame seeds, warm amber tones, kawaii chibi food art, sparkles and stars around"
+    imagePrompt: "tang cu pai gu sweet and sour spare ribs, glossy amber caramel glaze coating each rib, visible bone cross-sections, scattered white sesame seeds, sticky sauce dripping in slow motion, stacked on a round blue-rimmed plate, dramatic close-up"
   },
   {
     id: 7, name: "白切鸡", region: "粤菜", emoji: "🍗",
@@ -104,7 +104,7 @@ const RECIPES = [
       "姜葱末加盐，淋热油，调蘸碟"
     ],
     pigComment: "皮爽肉滑！灵魂在于蘸碟！小猪的经验是姜葱碟要多放点盐才够香！",
-    imagePrompt: "cute anime kawaii illustration of poached white cut chicken, sliced beautifully on a plate, jade green spring onion ginger dip, elegant cantonese style, kawaii food art, clean white background with soft shadows"
+    imagePrompt: "bai qie ji white cut chicken, perfectly poached skin-on chicken slices showing moist tender pink-white meat, arranged in overlapping crescent formation, small dipping bowl of jade-green scallion ginger sauce beside it, ice-crystal skin texture, minimalist cantonese plating"
   },
 
   // ===== 湘菜 =====
@@ -121,7 +121,7 @@ const RECIPES = [
       "可再淋少许生抽提鲜"
     ],
     pigComment: "超级无敌辣！！小猪吃这道菜会边吃边哭边喊好吃！鱼头胶质满满，太爽了！",
-    imagePrompt: "cute anime kawaii illustration of steamed fish head with chili, vibrant red chopped chilies covering the fish, steam rising, dramatic and spicy, kawaii food art style, fire and hearts around it"
+    imagePrompt: "duo jiao yu tou steamed fish head smothered in a thick layer of bright red and yellow chopped pickled chilies, massive fish head filling the entire plate, billowing white steam clouds, visible fish cheek meat, fiery dramatic presentation on a large oval plate"
   },
   {
     id: 9, name: "农家小炒肉", region: "湘菜", emoji: "🥩🌶️",
@@ -136,7 +136,7 @@ const RECIPES = [
       "大火爆炒均匀出锅"
     ],
     pigComment: "下饭神器！辣香鲜！关键是猪皮要煸出油，嚼起来QQ的！小猪超爱吃肥肉的～",
-    imagePrompt: "cute anime kawaii illustration of stir-fried pork with peppers, crispy pork slices with colorful peppers, sizzling hot wok, kawaii chibi style, warm red tones, cozy rustic background"
+    imagePrompt: "xiao chao rou hunan stir-fried pork with peppers, thin sliced pork belly with crispy caramelized edges tossed with charred green and red peppers, smoky wok hei aroma visible, glistening garlic and fermented black bean bits, served in a cast iron wok"
   },
 
   // ===== 京菜 =====
@@ -153,7 +153,7 @@ const RECIPES = [
       "面条盛碗，铺菜码，浇炸酱，拌匀"
     ],
     pigComment: "北京人的灵魂！酱要慢慢熬才香！小猪吃炸酱面一定要放大量黄瓜丝，爽口！",
-    imagePrompt: "cute anime kawaii illustration of zha jiang mian noodles, thick rich soybean sauce over noodles, colorful vegetable toppings cucumber shreds and bean sprouts, kawaii bowl art, cozy warm colors"
+    imagePrompt: "zha jiang mian Beijing noodles in a deep ceramic bowl, thick dark fermented soybean paste sauce pooled in the center of hand-pulled noodles, surrounded by colorful toppings: julienned cucumber, white radish shreds, blanched bean sprouts, edamame, arranged like a clock face, chopsticks lifting noodles"
   },
   {
     id: 11, name: "醋溜白菜", region: "京菜", emoji: "🥬",
@@ -168,7 +168,7 @@ const RECIPES = [
       "大火收汁出锅，全程不超过3分钟"
     ],
     pigComment: "简单到极致的美味！醋要大胆放！小猪最喜欢锅边那一下嗞的声音，太解压了！",
-    imagePrompt: "cute anime kawaii illustration of vinegar cabbage stir fry, crisp translucent cabbage in glossy sauce, steaming hot, kawaii minimalist food art, fresh green and white tones"
+    imagePrompt: "cu liu bai cai hot and sour cabbage, crisp translucent napa cabbage chunks in a tangy glossy vinegar sauce with dried red chili flakes and Sichuan peppercorns, glistening oil droplets on surface, served in a simple white ceramic dish, fresh and appetizing"
   },
 
   // ===== 东北菜 =====
@@ -185,7 +185,7 @@ const RECIPES = [
       "加生抽、糖、少量水勾薄芡即可"
     ],
     pigComment: "纯素三剑客！油炸过的土豆和茄子配青椒，太香了！东北菜就是豪爽！",
-    imagePrompt: "cute anime kawaii illustration of di san xian stir fry, golden potato chunks, soft purple eggplant, bright green peppers in glossy sauce, kawaii colorful food art, cheerful warm background"
+    imagePrompt: "di san xian three treasures stir fry, golden deep-fried potato wedges, soft purple eggplant chunks with velvety texture, vivid green pepper triangles, all coated in a rich savory garlic soy glaze, colorful tricolor composition on a round earthenware plate"
   },
   {
     id: 13, name: "猪肉炖粉条", region: "东北菜", emoji: "🍲",
@@ -200,7 +200,7 @@ const RECIPES = [
       "下粉条和白菜继续炖15分钟至软烂"
     ],
     pigComment: "冬天的灵魂！热乎乎的一锅端上来，粉条吸满汤汁，小猪能连汤都喝光！",
-    imagePrompt: "cute anime kawaii illustration of northeast chinese braised pork with vermicelli and cabbage, steaming clay pot, rich brown broth, cozy winter food art, warm orange tones, kawaii comfort food style"
+    imagePrompt: "zhu rou dun fen tiao northeast braised pork with glass noodles, bubbling clay pot filled with tender pork chunks, translucent vermicelli absorbing rich brown broth, soft napa cabbage leaves, hearty winter comfort food, thick soupy texture, rustic ceramic pot with lid on side"
   },
 
   // ===== 家常菜 =====
@@ -217,7 +217,7 @@ const RECIPES = [
       "倒入炒好的鸡蛋翻炒均匀出锅"
     ],
     pigComment: "中华第一家常菜！谁说简单？加了糖的才是正解！小猪觉得这道菜能治愈一切烦恼～",
-    imagePrompt: "cute anime kawaii illustration of tomato and egg stir fry, vibrant red tomatoes with fluffy yellow scrambled eggs, steaming hot, classic chinese home cooking kawaii art, cheerful bright colors, hearts"
+    imagePrompt: "xi hong shi chao ji dan tomato scrambled eggs, fluffy golden egg curds nestled among juicy burst red tomato wedges, natural tomato juice creating a vibrant red-orange sauce, sprinkled with chopped scallion, the most iconic Chinese home-cooked dish, served in a shallow white plate"
   },
   {
     id: 15, name: "酸辣土豆丝", region: "家常", emoji: "🥔",
@@ -232,7 +232,7 @@ const RECIPES = [
       "土豆丝断生即出锅（保持脆感）"
     ],
     pigComment: "开胃神器！关键是要保持脆感，炒过头就不好吃了！小猪最爱配粥吃！",
-    imagePrompt: "cute anime kawaii illustration of sour and spicy potato shreds, crisp thin potato strips with red chili, tangy refreshing dish, kawaii food art style, bright fresh colors"
+    imagePrompt: "suan la tu dou si shredded potato stir fry, a mountain of ultra-thin crispy matchstick potato strips glistening with vinegar and chili oil, scattered dried red chili segments and Sichuan peppercorns, crunchy texture visible, served on a blue and white porcelain plate"
   },
   {
     id: 16, name: "蛋炒饭", region: "家常", emoji: "🍳🍚",
@@ -247,7 +247,7 @@ const RECIPES = [
       "最后撒葱花翻炒均匀"
     ],
     pigComment: "深夜食堂的神！隔夜饭才是王道！小猪版秘诀：油要多，火要大，炒出来才有锅气！",
-    imagePrompt: "cute anime kawaii illustration of fried rice with eggs, golden fluffy egg fried rice in a wok, green onion specks, steam rising, kawaii late night food art, warm yellow tones, cozy atmosphere"
+    imagePrompt: "dan chao fan egg fried rice, each grain of golden rice individually coated with egg, perfectly separated and fluffy, dotted with bright green scallion bits, wok hei smoke curling up, served mounded in a traditional round-bottomed bowl then flipped onto a plate"
   },
   {
     id: 17, name: "红烧肉", region: "家常", emoji: "🍖",
@@ -262,7 +262,7 @@ const RECIPES = [
       "转小火炖1小时，最后大火收汁"
     ],
     pigComment: "传世经典！小猪觉得红烧肉是世界上最幸福的味道！肥而不腻，入口即化！",
-    imagePrompt: "cute anime kawaii illustration of hong shao rou braised pork belly, glossy caramelized pork cubes, rich dark sauce, steam rising, kawaii luxurious food art, deep warm tones, hearts floating"
+    imagePrompt: "hong shao rou red braised pork belly, perfect cubes of jiggly layered pork belly with caramelized mahogany glaze, alternating fat and lean layers visible in cross section, rich collagen-thick sauce pooling beneath, star anise and cinnamon stick garnish, luxurious shine"
   },
   {
     id: 18, name: "番茄牛腩", region: "家常", emoji: "🍅🥩",
@@ -277,7 +277,7 @@ const RECIPES = [
       "下土豆块继续炖20分钟至软烂"
     ],
     pigComment: "酸甜浓郁超下饭！土豆软烂吸满汤汁！小猪连汤都要拌饭吃，一点不剩！",
-    imagePrompt: "cute anime kawaii illustration of tomato beef brisket stew with potatoes, rich red tomato broth, tender beef chunks, soft potato pieces, kawaii hearty stew art, rustic cozy bowl"
+    imagePrompt: "fan qie dun niu nan tomato braised beef brisket, thick rich crimson tomato broth with fall-apart tender beef chunks and soft golden potato wedges, herbs floating on surface, served in a deep earthenware casserole dish, hearty and warming, side view showing depth of stew"
   },
   {
     id: 19, name: "蒸鸡蛋羹", region: "家常", emoji: "🥚",
@@ -292,7 +292,7 @@ const RECIPES = [
       "出锅淋生抽和香油，撒葱花"
     ],
     pigComment: "嫩滑到可以颤动！温水是秘诀！小猪生病没胃口的时候最想吃这个，太温柔了～",
-    imagePrompt: "cute anime kawaii illustration of steamed egg custard in a white bowl, silky smooth custard surface, drizzled with soy sauce and sesame oil, green onion dots, soft gentle kawaii food art, light airy pastel tones"
+    imagePrompt: "zheng ji dan steamed egg custard, mirror-smooth silky golden custard surface in a white ceramic bowl, delicate drizzle of dark soy sauce and amber sesame oil creating artistic swirl patterns, three tiny scallion rings floating on top, spoon revealing custardy jiggly texture inside"
   },
   {
     id: 20, name: "青椒肉丝", region: "家常", emoji: "🌿",
@@ -307,7 +307,7 @@ const RECIPES = [
       "下肉丝，加生抽翻炒均匀出锅"
     ],
     pigComment: "快手家常菜！肉嫩椒脆！小猪的秘诀是肉丝一定要提前腌，滑嫩的关键！",
-    imagePrompt: "cute anime kawaii illustration of pork strips with green pepper stir fry, tender pork shreds and vibrant green peppers, kawaii simple home cooking art, fresh green color palette"
+    imagePrompt: "qing jiao rou si shredded pork with green peppers, tender pink pork strips stir-fried with crisp bright green pepper strips, light savory soy sauce glaze, simple but perfectly executed, glistening with a thin sheen of cooking oil, piled high on a white plate"
   },
   {
     id: 21, name: "蒜蓉炒空心菜", region: "家常", emoji: "🥬",
@@ -322,7 +322,7 @@ const RECIPES = [
       "菜稍软即出锅（保持翠绿）"
     ],
     pigComment: "3分钟出锅！简单是简单，但火候是关键！大火快炒，菜要翠绿！小猪夏天最爱！",
-    imagePrompt: "cute anime kawaii illustration of garlic water spinach stir fry, vibrant green hollow vegetables, golden garlic bits, fresh and healthy kawaii food art, bright clean colors"
+    imagePrompt: "suan rong kong xin cai garlic water spinach, vibrant jade-green hollow stem vegetables stir-fried until just wilted, golden minced garlic bits scattered throughout, bright fresh and healthy appearance, high heat wok flavor visible, served on a clean oval plate"
   },
   {
     id: 22, name: "虾仁炒鸡蛋", region: "家常", emoji: "🦐🥚",
@@ -337,7 +337,7 @@ const RECIPES = [
       "撒葱花出锅"
     ],
     pigComment: "鲜上加鲜！虾的甜和蛋的香简直绝配！小猪觉得这道菜能让人忘记所有烦恼～",
-    imagePrompt: "cute anime kawaii illustration of shrimp and egg stir fry, plump pink shrimp with fluffy yellow eggs, kawaii seafood food art, light golden color palette, ocean sparkles"
+    imagePrompt: "xia ren chao dan shrimp with scrambled eggs, plump curled pink-orange shrimp nestled in soft fluffy golden egg curds, bright contrast of pink and yellow, light and delicate wok-tossed presentation, garnished with a sprig of cilantro"
   },
   {
     id: 23, name: "清炒豆芽", region: "家常", emoji: "🌱",
@@ -351,7 +351,7 @@ const RECIPES = [
       "翻炒均匀立刻出锅（保持脆感）"
     ],
     pigComment: "穷开心三件套之一！清爽脆嫩，加点醋超开胃！小猪穷的时候最爱吃这个！",
-    imagePrompt: "cute anime kawaii illustration of stir-fried bean sprouts, crisp white sprouts with red chili and garlic, fresh and simple kawaii food art, light refreshing colors, cheerful minimalist style"
+    imagePrompt: "qing chao dou ya stir-fried bean sprouts, crisp translucent white-yellow sprouts with red chili threads and golden garlic slices, fresh and crunchy texture visible, light simple presentation on a green-rimmed plate, minimalist wholesome food"
   },
   {
     id: 24, name: "土豆烧排骨", region: "家常", emoji: "🥔🍖",
@@ -366,7 +366,7 @@ const RECIPES = [
       "大火收汁，撒葱花出锅"
     ],
     pigComment: "土豆和排骨是天生一对！土豆吸满了排骨的香气，排骨软到脱骨！小猪超幸福！",
-    imagePrompt: "cute anime kawaii illustration of braised pork ribs with potatoes, golden potatoes and tender ribs in rich brown gravy, kawaii hearty comfort food art, warm autumn colors"
+    imagePrompt: "pai gu dun tu dou braised pork ribs with potatoes, fall-off-the-bone meaty ribs and golden soft potato chunks in a thick savory brown gravy, rich collagen-glossy sauce, simmered until perfectly tender, served in a deep stoneware bowl"
   },
   {
     id: 25, name: "韭菜炒鸡蛋", region: "家常", emoji: "🌿🥚",
@@ -381,7 +381,7 @@ const RECIPES = [
       "出锅，趁热吃最香"
     ],
     pigComment: "春天必吃！韭菜的香气配上鸡蛋，简单到不能再简单却好吃到不行！小猪的春天食谱！",
-    imagePrompt: "cute anime kawaii illustration of chive and egg stir fry, vibrant green chives with fluffy scrambled egg, simple rustic kawaii food art, spring green and yellow colors, fresh feeling"
+    imagePrompt: "jiu cai chao ji dan chive and egg stir fry, vivid emerald green chive segments intertwined with fluffy golden scrambled egg pieces, beautiful spring-like green and gold contrast, simple rustic home cooking charm, served on a round ceramic plate"
   },
 
   // ===== 更多川菜 =====
@@ -398,7 +398,7 @@ const RECIPES = [
       "铺干辣椒和花椒，烧热油淋上，滋滋作响即可"
     ],
     pigComment: "看到那一锅红汤小猪就激动！烧热油那一下是整道菜的高潮！麻辣鲜嫩，吃一次想一周！",
-    imagePrompt: "cute anime kawaii illustration of shui zhu yu boiled fish, vibrant red spicy broth with tender fish slices, bean sprouts underneath, sizzling hot oil being poured over red chilies and Sichuan pepper, dramatic fire effect, kawaii spicy food art"
+    imagePrompt: "shui zhu yu Sichuan boiled fish in chili oil, delicate white fish fillets submerged in a sea of fiery crimson chili oil, dried red chilies and Sichuan peppercorns floating on surface, bean sprouts and celery underneath, hot oil just poured sizzling violently, dramatic steam and spice explosion"
   },
   {
     id: 27, name: "夫妻肺片", region: "川菜", emoji: "🥩",
@@ -412,7 +412,7 @@ const RECIPES = [
       "最后放芹菜段或葱花提香"
     ],
     pigComment: "名字吓人实则超香！冷吃最妙，麻辣鲜香，花生脆香，小猪每次都要多舀一勺红油！",
-    imagePrompt: "cute anime kawaii illustration of fu qi fei pian cold spiced beef slices, glistening red chili oil, peanuts and sesame, elegant plating, kawaii sichuan cold dish art, rich red tones"
+    imagePrompt: "fu qi fei pian husband wife lung slices, paper-thin slices of spiced beef and offal arranged flat on an oval plate, drenched in bright red aromatic chili oil, scattered crushed roasted peanuts, toasted sesame seeds, and celery leaf garnish, glistening and seductive cold dish"
   },
   {
     id: 28, name: "毛血旺", region: "川菜", emoji: "🫕",
@@ -427,7 +427,7 @@ const RECIPES = [
       "大量干辣椒和花椒铺面，浇热油"
     ],
     pigComment: "重庆人的骄傲！又麻又辣又烫，小猪每次都大汗淋漓还不停筷子！配白米饭超级爽！",
-    imagePrompt: "cute anime kawaii illustration of mao xue wang spicy hot pot dish, bright red broth with duck blood tofu and tripe, sizzling with chilies, dramatic kawaii spicy food art, intense red orange colors"
+    imagePrompt: "mao xue wang spicy blood curd stew, bubbling intense red chili broth filled with cubed dark duck blood, honeycomb tripe strips, tender luncheon meat, yellow bean sprouts, covered in a thick layer of dried chilies and Sichuan peppercorns, volcanic and dramatic, cast iron pot"
   },
   {
     id: 29, name: "酸菜鱼", region: "川菜", emoji: "🐟🥬",
@@ -442,7 +442,7 @@ const RECIPES = [
       "撒葱花，浇热油激香"
     ],
     pigComment: "酸辣爽口！比水煮鱼更清爽，酸菜的酸和鱼的鲜完美融合！小猪喝汤都能喝三碗！",
-    imagePrompt: "cute anime kawaii illustration of suan cai yu sour cabbage fish soup, golden sour broth with tender white fish slices and pickled vegetables, kawaii comforting soup art, warm yellow green tones"
+    imagePrompt: "suan cai yu pickled cabbage fish soup, milky golden tangy broth with silky white fish fillets, shredded pickled mustard greens, sliced pickled peppers, tiny bubbles on broth surface, comforting sour warmth, served in a large stone pot with ladle"
   },
   {
     id: 30, name: "水煮肉片", region: "川菜", emoji: "🥩🌶️",
@@ -456,7 +456,7 @@ const RECIPES = [
       "铺干辣椒花椒，烧热油淋上"
     ],
     pigComment: "水煮系列的猪肉版！肉片嫩滑辣椒香，小猪最爱那层厚厚的红油，拌饭简直绝了！",
-    imagePrompt: "cute anime kawaii illustration of shui zhu rou pian boiled pork slices, silky tender pork in red spicy broth, vibrant chilies, kawaii sichuan dish art, fiery reds"
+    imagePrompt: "shui zhu rou pian boiled pork in chili broth, ultra-thin silky pork slices floating in a pool of searingly red chili oil, topped with a mountain of dried chilies and crushed garlic, hot oil just poured creating sizzling aroma, fiery and intense"
   },
   {
     id: 31, name: "辣子鸡", region: "川菜", emoji: "🍗🌶️",
@@ -471,7 +471,7 @@ const RECIPES = [
       "撒芝麻和葱花出锅"
     ],
     pigComment: "找鸡块大作战！辣椒比鸡肉还多！小猪专门负责在辣椒堆里挖鸡块，找到一块开心一下！",
-    imagePrompt: "cute anime kawaii illustration of la zi ji spicy diced chicken, golden crispy chicken pieces buried in a mountain of dried red chilies and Sichuan pepper, kawaii dramatic dish, fiery dramatic composition"
+    imagePrompt: "la zi ji Chongqing spicy chicken, tiny golden crispy chicken pieces almost hidden beneath a towering mountain of hundreds of dried red chilies and Sichuan peppercorns, treasure-hunt style presentation, wok-fried until fragrant, dramatic overhead shot showing the chili mountain"
   },
 
   // ===== 鲁菜 =====
@@ -488,7 +488,7 @@ const RECIPES = [
       "将汁淋在鱼上即可"
     ],
     pigComment: "鲁菜的经典颜值担当！外酥里嫩，酸甜可口！小猪最爱啃鱼尾巴，脆脆的超好吃！",
-    imagePrompt: "cute anime kawaii illustration of tang cu li yu sweet and sour carp, whole golden fried fish with glossy sweet and sour sauce, elegant presentation, kawaii traditional chinese dish, golden amber tones"
+    imagePrompt: "tang cu li yu sweet and sour Yellow River carp, whole deep-fried golden carp with its body scored into a blooming flower pattern, draped in glossy bright orange-red sweet and sour sauce, crispy tail standing up dramatically, traditional Shandong banquet presentation"
   },
   {
     id: 33, name: "葱烧豆腐", region: "鲁菜", emoji: "🧅",
@@ -502,7 +502,7 @@ const RECIPES = [
       "大火收汁，让汤汁裹满豆腐"
     ],
     pigComment: "葱香扑鼻！鲁菜用葱的功力天下无双！豆腐吸满酱汁，入口鲜香！小猪觉得简单的才最难忘！",
-    imagePrompt: "cute anime kawaii illustration of scallion braised tofu, golden tofu blocks in rich brown soy sauce with caramelized green onion, kawaii homestyle dish, warm savory tones"
+    imagePrompt: "cong shao dou fu scallion braised tofu, golden pan-fried tofu blocks with crispy outer crust in rich dark soy braising sauce, caramelized thick scallion segments draped over top, savory and aromatic, served in a shallow brown ceramic dish"
   },
   {
     id: 34, name: "九转大肠", region: "鲁菜", emoji: "🌀",
@@ -517,7 +517,7 @@ const RECIPES = [
       "小火焖至入味收汁，撒香菜"
     ],
     pigComment: "鲁菜最考功力的一道！又酸又甜又香又软烂，九种工序造就完美口感！小猪第一次吃惊为天人！",
-    imagePrompt: "cute anime kawaii illustration of jiu zhuan da chang braised pork intestine, glossy caramelized pork rolls in rich sauce, traditional shandong cuisine kawaii art, deep amber brown tones"
+    imagePrompt: "jiu zhuan da chang nine-turn large intestine, perfectly braised thick intestine rings with a deep mahogany caramelized glaze, complex layered sauce with hints of vinegar sweetness and spice, traditional Shandong imperial cuisine, arranged in a spiral pattern on a carved plate"
   },
 
   // ===== 苏菜/淮扬菜 =====
@@ -534,7 +534,7 @@ const RECIPES = [
       "大火收汁即可"
     ],
     pigComment: "大气磅礴！一个肉丸大如狮头，软糯鲜美！小猪每次都要把汤汁也喝干净，实在太鲜了！",
-    imagePrompt: "cute anime kawaii illustration of hong shao shi zi tou red braised lion head meatball, giant pork meatball in rich brown sauce with cabbage, kawaii grand presentation, warm cozy tones"
+    imagePrompt: "hong shao shi zi tou red braised lion head meatball, an enormous hand-shaped pork meatball the size of a fist, glossy dark brown braising sauce, surrounded by tender baby bok choy leaves, cross-section showing juicy tender interior with visible meat grain texture, majestic presentation in a clay pot"
   },
   {
     id: 36, name: "盐水鸭", region: "苏菜", emoji: "🦆",
@@ -549,7 +549,7 @@ const RECIPES = [
       "捞出晾凉后斩件"
     ],
     pigComment: "南京鸭子天下第一！皮白肉嫩，咸鲜适中！小猪觉得冷吃才是灵魂，越嚼越香！",
-    imagePrompt: "cute anime kawaii illustration of yan shui ya nanjing salted duck, pale silky duck pieces on a plate, simple elegant presentation, kawaii traditional nanjing cuisine art, soft white and golden tones"
+    imagePrompt: "yan shui ya Nanjing salted duck, pale ivory-skinned duck pieces with a rosy pink interior showing perfectly brined meat, skin glistening with rendered fat, elegant simple slicing arrangement, a small dish of dipping sauce alongside, refined understated Nanjing style"
   },
   {
     id: 37, name: "清炒虾仁", region: "苏菜", emoji: "🦐",
@@ -564,7 +564,7 @@ const RECIPES = [
       "翻炒均匀，清淡出锅"
     ],
     pigComment: "苏菜的清淡之美！虾仁鲜甜弹牙，清清爽爽不油腻！小猪觉得这道菜是春天的味道！",
-    imagePrompt: "cute anime kawaii illustration of qing chao xia ren stir fried shrimp, plump pink shrimp with colorful vegetables, light fresh kawaii dish art, clean spring colors, delicate presentation"
+    imagePrompt: "qing chao xia ren crystal clear stir-fried shrimp, plump jade-white shrimp with a translucent crystalline texture from velvet technique, bright green snap peas and white water chestnuts, light glistening sauce, clean elegant Jiangsu cuisine style, spring freshness"
   },
 
   // ===== 浙菜 =====
@@ -581,7 +581,7 @@ const RECIPES = [
       "将汁淋在鱼上，撒姜丝"
     ],
     pigComment: "西湖边的传世名菜！不放一滴油！鱼肉鲜嫩，糖醋汁酸甜微辣，小猪觉得清雅极了！",
-    imagePrompt: "cute anime kawaii illustration of west lake vinegar fish, whole steamed fish with glossy sweet sour sauce and ginger, elegant hangzhou cuisine kawaii art, soft elegant blue green tones inspired by west lake"
+    imagePrompt: "xi hu cu yu West Lake vinegar fish, a whole poached grass carp with translucent glossy sweet-sour dark vinegar sauce draped over it, ginger thread garnish, the fish resting elegantly on a celadon-green oval plate evoking the colors of West Lake, classical Hangzhou refinement"
   },
   {
     id: 39, name: "东坡肉", region: "浙菜", emoji: "🍖",
@@ -596,7 +596,7 @@ const RECIPES = [
       "翻面皮朝上再焖30分钟收汁"
     ],
     pigComment: "苏东坡大文豪的杰作！慢工出细活，肥而不腻，入口即化！小猪觉得等待的过程都是享受！",
-    imagePrompt: "cute anime kawaii illustration of dong po rou braised pork belly, square pork cube with caramelized skin on top in rich dark sauce, tied with string, kawaii luxurious dish art, deep rich brown tones"
+    imagePrompt: "dong po rou Su Dongpo braised pork, a single perfect square of pork belly tied with straw string, the skin is deep amber-caramelized and gelatinous, fat layer is translucent and jiggly, lean layer is burgundy-red, sitting in a pool of concentrated dark braising jus, individual serving in a small covered clay pot"
   },
   {
     id: 40, name: "龙井虾仁", region: "浙菜", emoji: "🍵🦐",
@@ -611,7 +611,7 @@ const RECIPES = [
       "加盐调味，清香出锅"
     ],
     pigComment: "茶与虾的绝妙搭配！清香扑鼻，虾仁鲜甜，茶香萦绕！小猪觉得这道菜最适合春天品味！",
-    imagePrompt: "cute anime kawaii illustration of long jing xia ren shrimp with dragon well tea, plump white shrimp with delicate green tea leaves, elegant spring dish, kawaii refined chinese cuisine art, fresh spring green tones"
+    imagePrompt: "long jing xia ren Dragon Well tea shrimp, plump white jade-like shrimp scattered with tiny delicate Dragon Well tea leaves, the pale green tea leaves clinging to each shrimp, light and ethereal spring dish, served on a white porcelain plate with a cup of green tea alongside, poetic Hangzhou elegance"
   },
 
   // ===== 徽菜 =====
@@ -628,7 +628,7 @@ const RECIPES = [
       "大火收汁，撒干辣椒和葱花"
     ],
     pigComment: "闻着臭吃着香！这就是徽菜最神秘的菜！小猪第一次被朋友骗着吃，一口下去爱上了！",
-    imagePrompt: "cute anime kawaii illustration of chou gui yu stinky mandarin fish, golden braised fish in savory sauce, mysterious and intriguing kawaii dish art, earthy rustic tones, curiosity expression"
+    imagePrompt: "chou gui yu Anhui stinky mandarin fish, a whole golden-brown pan-fried fermented fish with crispy charred skin, rich savory dark sauce with bamboo shoots and mushroom slices, aromatic and mysterious, served on a rustic wooden board, traditional Huizhou cuisine atmosphere with ink-wash mountain backdrop"
   },
 
   // ===== 闽菜 =====
@@ -645,7 +645,7 @@ const RECIPES = [
       "肉和荸荠下锅翻炒，倒入糖醋汁收汁"
     ],
     pigComment: "形如荔枝，味似荔枝！闽菜的创意令小猪叹为观止！酸甜多汁，这就是福建人的幸福感！",
-    imagePrompt: "cute anime kawaii illustration of li zhi rou lychee pork, golden pork pieces shaped like lychee fruits with sweet sour sauce, creative fujianese dish kawaii art, golden pink tones"
+    imagePrompt: "li zhi rou Fujian lychee pork, golden-fried pork pieces scored into a cross-hatch pattern curling up to resemble lychee fruits, coated in a glossy sweet and sour tangy red sauce with water chestnuts, creative and playful presentation, vibrant orange-red and gold tones"
   },
 
   // ===== 更多粤菜 =====
@@ -662,7 +662,7 @@ const RECIPES = [
       "大火出锅"
     ],
     pigComment: "蚝油是粤菜的灵魂！牛肉嫩滑到不可思议！小苏打是秘诀，小猪学到这招之后牛肉再也没炒老过！",
-    imagePrompt: "cute anime kawaii illustration of oyster sauce beef, tender juicy beef slices with green peppers in glossy oyster sauce, cantonese stir fry kawaii art, savory warm brown tones"
+    imagePrompt: "hao you niu rou oyster sauce beef, velvety tender sliced beef with a silky brown oyster sauce glaze, stir-fried with crisp green bell pepper slices and white onion, each beef slice showing perfect wok sear marks, classic Cantonese restaurant style plating on a hot sizzling iron plate"
   },
   {
     id: 44, name: "咕噜肉", region: "粤菜", emoji: "🍍🥩",
@@ -677,7 +677,7 @@ const RECIPES = [
       "下肉、菠萝和彩椒翻炒均匀"
     ],
     pigComment: "菠萝入菜！酸甜多汁！外国人最爱的中国菜！小猪觉得菠萝块比肉块还好吃，果汁都浸入了！",
-    imagePrompt: "cute anime kawaii illustration of gu lao rou sweet and sour pork with pineapple, golden crispy pork with colorful pineapple and peppers in glossy sauce, kawaii tropical vibes, vibrant yellow red greens"
+    imagePrompt: "gu lao rou Cantonese sweet and sour pork, golden crispy battered pork chunks with bright yellow pineapple wedges, red and green bell pepper chunks, all coated in a vibrant glossy orange-red sweet and sour sauce, tropical and colorful, sauce dripping in slow motion"
   },
   {
     id: 45, name: "叉烧肉", region: "粤菜", emoji: "🍖",
@@ -692,7 +692,7 @@ const RECIPES = [
       "切片，淋剩余汁液"
     ],
     pigComment: "港式茶餐厅的灵魂！蜜汁焦香，外焦里嫩！小猪觉得切开那一刀是全宇宙最美的截面！",
-    imagePrompt: "cute anime kawaii illustration of char siu cantonese bbq pork, caramelized honey glazed pork slices with beautiful char marks, glistening and appetizing, kawaii hongkong cuisine art, golden red tones"
+    imagePrompt: "cha shao Cantonese BBQ pork, thick slices of honey-glazed roasted pork showing a caramelized burnt-red exterior with charred edges, juicy pink center with marbled fat, glistening honey drizzle, iconic Hong Kong roast meat shop style, hanging from hooks in background"
   },
 
   // ===== 更多东北菜 =====
@@ -709,7 +709,7 @@ const RECIPES = [
       "下粉条再炖15分钟，汤汁浓郁即可"
     ],
     pigComment: "东北冬天的味道！榛蘑的香气飘满整个屋子！小猪最爱喝那锅汤，能用来拌饭吃三碗！",
-    imagePrompt: "cute anime kawaii illustration of xiao ji dun mo gu chicken stewed with mushrooms, clay pot with tender chicken and woodland mushrooms, cozy winter kawaii food art, earthy warm brown tones"
+    imagePrompt: "xiao ji dun mo gu chicken stewed with wild mushrooms, a bubbling clay pot of tender free-range chicken pieces with plump hazel mushrooms and dried shiitake, rich golden collagen-heavy broth, glass noodles soaking up the stock, thick steam rising, cozy northeastern winter comfort food"
   },
   {
     id: 47, name: "锅包肉", region: "东北菜", emoji: "🥩🍊",
@@ -724,7 +724,7 @@ const RECIPES = [
       "下胡萝卜丝和葱丝翻匀出锅"
     ],
     pigComment: "东北版糖醋肉！比南方版更豪放！外壳超级酥脆，蘸满糖醋汁！小猪每次恨不得整盘抱走！",
-    imagePrompt: "cute anime kawaii illustration of guo bao rou northeast crispy pork, extra crispy golden pork pieces in sweet sour sauce with carrot shreds, kawaii northeastern style, vibrant golden orange"
+    imagePrompt: "guo bao rou northeast crispy sweet pork, thick-cut pork slices in a shatteringly crispy golden batter, coated in a tangy orange sweet-sour sauce with julienned carrot and cilantro garnish, each piece showing the contrast of crunchy exterior and tender meat, sauce splattering dramatically"
   },
   {
     id: 48, name: "拔丝地瓜", region: "东北菜", emoji: "🍠",
@@ -739,7 +739,7 @@ const RECIPES = [
       "配一碗冷水，吃前蘸一下"
     ],
     pigComment: "甜蜜蜜的幸福感！拉丝那一刻超有成就感！小猪觉得抢着夹的时候是饭桌上最快乐的时刻！",
-    imagePrompt: "cute anime kawaii illustration of ba si di gua candied sweet potato, golden sweet potato pieces with dramatic caramel strings being pulled apart, magical golden sparkles, kawaii dessert art"
+    imagePrompt: "ba si di gua candied sweet potato with pulled sugar threads, golden deep-fried sweet potato chunks being lifted by chopsticks with long dramatic stretchy caramel sugar threads connecting them, molten golden syrup dripping, magical sparkling crystallized sugar effect, action shot of the pull"
   },
 
   // ===== 更多湘菜 =====
@@ -756,7 +756,7 @@ const RECIPES = [
       "大火蒸15分钟即可"
     ],
     pigComment: "腊香扑鼻！三种腊味同蒸，香气叠加！小猪觉得腊肉的油脂蒸出来滴在腊肠上，那叫一个香！",
-    imagePrompt: "cute anime kawaii illustration of la wei he zheng steamed cured meats, colorful cured pork sausage and duck on a plate with black beans and chilies, kawaii traditional hunan dish, rustic warm tones"
+    imagePrompt: "la wei he zheng Hunan steamed cured meats, layers of sliced smoky cured pork belly, dark reddish cured sausage, and salted fish arranged in a deep steaming bowl, rendered fat glistening on surfaces, fermented black beans and dried chili flakes scattered, rustic countryside Hunan atmosphere"
   },
   {
     id: 50, name: "干锅花菜", region: "湘菜", emoji: "🥦",
@@ -771,7 +771,7 @@ const RECIPES = [
       "加生抽调味，收干汤汁出锅"
     ],
     pigComment: "素菜里的战斗机！花菜焦香微辣，五花肉点睛！小猪说这是最下饭的素菜，没有之一！",
-    imagePrompt: "cute anime kawaii illustration of gan guo hua cai dry pot cauliflower, crispy charred cauliflower florets with pork and spicy sauce in a sizzling wok, kawaii spicy food art, dramatic orange red"
+    imagePrompt: "gan guo hua cai dry pot cauliflower, charred crispy cauliflower florets with blackened edges stir-fried with sliced pork belly, dried red chilies, and garlic cloves in a mini cast iron wok, smoky dry-fried texture visible, no sauce but glistening with chili oil, Hunan dry pot style"
   },
 
   // ===== 更多家常菜 =====
@@ -788,7 +788,7 @@ const RECIPES = [
       "中火收汁至浓稠裹满鸡翅"
     ],
     pigComment: "三个字：下饭！绝！可乐收汁后的焦糖香气太迷人了！小猪做给朋友吃，每次都被要求留下菜谱！",
-    imagePrompt: "cute anime kawaii illustration of cola chicken wings, caramelized glossy chicken wings with cola reduction sauce, appetizing shine, kawaii popular dish art, golden caramel tones"
+    imagePrompt: "ke le ji chi cola chicken wings, plump glossy chicken wings coated in a deep caramel-brown cola reduction sauce, sticky and shiny with visible bubbling caramelization, arranged in a small black iron skillet, ice-cold glass of cola with condensation beside it for contrast"
   },
   {
     id: 52, name: "蒜泥白肉", region: "家常", emoji: "🧄🥩",
@@ -803,7 +803,7 @@ const RECIPES = [
       "将汁均匀淋在肉片上"
     ],
     pigComment: "川式凉菜扛把子！蒜香浓郁，红油诱人！小猪最爱把肉片裹着黄瓜丝一口吃，爽快极了！",
-    imagePrompt: "cute anime kawaii illustration of suan ni bai rou garlic pork slices, thin rolled pork slices with cucumber drizzled with vibrant red chili oil and garlic sauce, elegant cold dish kawaii art"
+    imagePrompt: "suan ni bai rou garlic white pork, paper-thin slices of boiled pork belly rolled into elegant curls layered over fresh cucumber slices, drenched in a bright red chili oil and mashed garlic sauce, cilantro leaf garnish, beautiful cold appetizer presentation on a long rectangular plate"
   },
   {
     id: 53, name: "番茄蛋花汤", region: "家常", emoji: "🍅🥚🍲",
@@ -818,7 +818,7 @@ const RECIPES = [
       "加盐、香油、葱花即可"
     ],
     pigComment: "最温柔的一碗汤！酸甜鲜美，蛋花软嫩！小猪生病的时候最想喝这个，5分钟暖胃暖心！",
-    imagePrompt: "cute anime kawaii illustration of tomato egg drop soup, bright red tomato broth with silky egg flower swirls, steam rising from a bowl, kawaii comfort soup art, warm red yellow tones, healing feeling"
+    imagePrompt: "fan qie dan hua tang tomato egg drop soup, clear bright ruby-red tomato broth with delicate golden egg ribbons swirling like flower petals, diced soft tomato pieces visible, chopped scallion and a few drops of sesame oil on surface, steaming in a white porcelain soup bowl with a Chinese spoon"
   },
   {
     id: 54, name: "麻辣香锅", region: "家常", emoji: "🫕🌶️",
@@ -833,7 +833,7 @@ const RECIPES = [
       "翻炒均匀，撒熟芝麻和葱花出锅"
     ],
     pigComment: "食材随心配！想放啥放啥！麻辣香到让人上瘾！小猪每次都会放一大堆藕片，超级入味！",
-    imagePrompt: "cute anime kawaii illustration of ma la xiang guo spicy hot pot stir fry, colorful mix of meats and vegetables in fiery red spicy sauce, abundance and variety, kawaii feast art, dramatic spicy red tones"
+    imagePrompt: "ma la xiang guo spicy numbing stir-fry pot, an overflowing wok packed with colorful ingredients: sliced lotus root, broccoli, enoki mushrooms, luncheon meat, shrimp, tofu skin, quail eggs, all coated in a fiery red mala sauce with visible Sichuan peppercorns and dried chilies, abundant and extravagant"
   },
   {
     id: 55, name: "酱牛肉", region: "家常", emoji: "🥩",
@@ -848,7 +848,7 @@ const RECIPES = [
       "关火在卤汤中浸泡至少2小时，切片即可"
     ],
     pigComment: "绝佳的下酒菜！卤香浓郁，越嚼越香！小猪建议多卤一些，放冰箱想吃随时切！做一次吃三天！",
-    imagePrompt: "cute anime kawaii illustration of jiang niu rou soy sauce braised beef, sliced marinated beef showing beautiful cross section grain, rich brown spiced broth, kawaii traditional dish art, deep savory tones"
+    imagePrompt: "jiang niu rou soy-braised spiced beef, beautifully sliced cold beef showing a deep burgundy-brown interior with tight grain texture, arranged in overlapping shingle pattern on a wooden cutting board, star anise and cinnamon bark garnish beside it, rich aromatic spiced broth in a small bowl nearby"
   }
 ];
 

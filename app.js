@@ -235,7 +235,6 @@ function showDetail(id) {
 
 // ===== AI 图片生成（Pollinations.ai，免费无需 Key）=====
 function generateImage(prompt) {
-  const wrap = $("ai-image-wrap");
   const img = $("ai-image");
   const loading = $("ai-image-loading");
   const errorDiv = $("ai-image-error");
@@ -245,10 +244,17 @@ function generateImage(prompt) {
   errorDiv.style.display = "none";
   loading.style.display = "flex";
 
-  const encoded = encodeURIComponent(prompt);
-  // 加随机seed避免缓存同一张
+  // 通用画风前缀 + 质量后缀，让每张图风格统一
+  const stylePrefix = "masterpiece, best quality, highly detailed anime food illustration, professional food photography angle, ";
+  const styleSuffix = ", warm golden hour lighting, shallow depth of field, visible steam wisps, beautiful ceramic dishware, cozy kitchen background with soft bokeh, Makoto Shinkai color palette, vibrant appetizing saturated colors, 8k ultra detailed rendering";
+  const negative = "ugly, blurry, low quality, deformed, text, watermark, signature, bad anatomy, worst quality, jpeg artifacts, extra fingers, mutated hands, poorly drawn face, realistic human";
+
+  const fullPrompt = stylePrefix + prompt + styleSuffix;
   const seed = Math.floor(Math.random() * 100000);
-  img.src = `https://image.pollinations.ai/prompt/${encoded}?width=512&height=512&model=flux&nologo=true&seed=${seed}`;
+  const encoded = encodeURIComponent(fullPrompt);
+  const negEncoded = encodeURIComponent(negative);
+
+  img.src = `https://image.pollinations.ai/prompt/${encoded}?width=768&height=768&model=flux&nologo=true&seed=${seed}&negative=${negEncoded}`;
 }
 
 function onImageLoad() {
