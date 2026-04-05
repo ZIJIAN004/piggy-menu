@@ -135,17 +135,25 @@ function doSearch() {
 
   // 食材匹配（模式1、3）
   if ((state.mode === 1 || state.mode === 3) && state.selectedIngredients.length > 0) {
+    const total = state.selectedIngredients.length;
     results = results
       .map(r => {
         const matched = state.selectedIngredients.filter(i =>
           r.ingredients.some(ri => ri.includes(i) || i.includes(ri))
         );
-        return { ...r, matchCount: matched.length, matchedIngredients: matched };
+        const missing = state.selectedIngredients.filter(i =>
+          !r.ingredients.some(ri => ri.includes(i) || i.includes(ri))
+        );
+        return { ...r, matchCount: matched.length, matchedIngredients: matched, missingIngredients: missing, isFullMatch: matched.length === total };
       })
       .filter(r => r.matchCount > 0)
-      .sort((a, b) => b.matchCount - a.matchCount);
+      .sort((a, b) => {
+        // 完全匹配优先，其次按匹配数降序
+        if (a.isFullMatch !== b.isFullMatch) return b.isFullMatch - a.isFullMatch;
+        return b.matchCount - a.matchCount;
+      });
   } else {
-    results = results.map(r => ({ ...r, matchCount: 0, matchedIngredients: [] }));
+    results = results.map(r => ({ ...r, matchCount: 0, matchedIngredients: [], missingIngredients: [], isFullMatch: false }));
   }
 
   renderResults(results);
@@ -153,10 +161,39 @@ function doSearch() {
 }
 
 // ===== 结果列表 =====
-function renderResults(results) {
-  $("results-count").textContent = `帮小猪找到 ${results.length} 道菜 🍽️`;
+function renderRecipeCard(r) {
+  const spicyStr = r.spicy > 0 ? "🌶️".repeat(r.spicy) : "";
+  const matchText = r.matchedIngredients && r.matchedIngredients.length > 0
+    ? `匹配食材：<strong>${r.matchedIngredients.join("、")}</strong>`
+    : "";
+  const missingText = r.missingIngredients && r.missingIngredients.length > 0
+    ? `<div class="recipe-missing">缺：${r.missingIngredients.join("、")}</div>`
+    : "";
+  const sourceTag = r.source
+    ? `<div class="source-tag source-tag-${r.source.platform}">${r.source.platform}收录 <span class="source-stats">👍${r.source.likes} ⭐${r.source.saves}</span></div>`
+    : "";
+  return `
+    <div class="recipe-card" onclick="showDetail(${r.id})">
+      <div class="recipe-emoji-wrap">${r.emoji}</div>
+      <div class="recipe-info">
+        <div class="recipe-name">${r.name}</div>
+        <div class="recipe-badges">
+          <span class="badge badge-region">${r.region}</span>
+          <span class="badge badge-time">⏱ ${r.time}</span>
+          <span class="badge badge-diff-${r.difficulty}">${r.difficulty}</span>
+          ${spicyStr ? `<span class="badge badge-spicy">${spicyStr}</span>` : ""}
+        </div>
+        ${matchText ? `<div class="recipe-match">${matchText}</div>` : ""}
+        ${missingText}
+        ${sourceTag}
+      </div>
+      <div class="recipe-arrow">›</div>
+    </div>`;
+}
 
+function renderResults(results) {
   if (results.length === 0) {
+    $("results-count").textContent = "没有找到匹配的菜 😢";
     $("recipe-grid").innerHTML = `
       <div class="empty-state">
         <div class="empty-emoji">🐷</div>
@@ -166,31 +203,38 @@ function renderResults(results) {
     return;
   }
 
-  $("recipe-grid").innerHTML = results.map(r => {
-    const spicyStr = r.spicy > 0 ? "🌶️".repeat(r.spicy) : "";
-    const matchText = r.matchedIngredients && r.matchedIngredients.length > 0
-      ? `匹配食材：<strong>${r.matchedIngredients.join("、")}</strong>`
-      : "";
-    const sourceTag = r.source
-      ? `<div class="source-tag source-tag-${r.source.platform}">${r.source.platform}收录 <span class="source-stats">👍${r.source.likes} ⭐${r.source.saves}</span></div>`
-      : "";
-    return `
-      <div class="recipe-card" onclick="showDetail(${r.id})">
-        <div class="recipe-emoji-wrap">${r.emoji}</div>
-        <div class="recipe-info">
-          <div class="recipe-name">${r.name}</div>
-          <div class="recipe-badges">
-            <span class="badge badge-region">${r.region}</span>
-            <span class="badge badge-time">⏱ ${r.time}</span>
-            <span class="badge badge-diff-${r.difficulty}">${r.difficulty}</span>
-            ${spicyStr ? `<span class="badge badge-spicy">${spicyStr}</span>` : ""}
-          </div>
-          ${matchText ? `<div class="recipe-match">${matchText}</div>` : ""}
-          ${sourceTag}
-        </div>
-        <div class="recipe-arrow">›</div>
-      </div>`;
-  }).join("");
+  // 判断是否有食材搜索（有 isFullMatch 字段说明是食材模式）
+  const hasIngredientSearch = results.some(r => r.matchCount > 0);
+
+  if (hasIngredientSearch) {
+    const fullMatch = results.filter(r => r.isFullMatch);
+    const partialMatch = results.filter(r => !r.isFullMatch);
+
+    let html = "";
+
+    if (fullMatch.length > 0) {
+      $("results-count").textContent = `小猪的食材全匹配 ${fullMatch.length} 道菜！🎉`;
+      html += fullMatch.map(renderRecipeCard).join("");
+    } else {
+      $("results-count").textContent = `没有完全匹配的菜，但有 ${partialMatch.length} 道相关推荐 🍽️`;
+    }
+
+    if (partialMatch.length > 0) {
+      html += `
+        <div class="section-divider">
+          <div class="divider-icon">🛒</div>
+          <div class="divider-text">如果小猪愿意再跑一趟超市的话…</div>
+          <div class="divider-sub">以下菜谱部分食材缺失，缺的已标出来啦</div>
+        </div>`;
+      html += partialMatch.map(renderRecipeCard).join("");
+    }
+
+    $("recipe-grid").innerHTML = html;
+  } else {
+    // 非食材搜索模式（模式2 或无食材）
+    $("results-count").textContent = `帮小猪找到 ${results.length} 道菜 🍽️`;
+    $("recipe-grid").innerHTML = results.map(renderRecipeCard).join("");
+  }
 }
 
 // ===== 菜谱详情 =====
@@ -287,17 +331,24 @@ function filterResults() {
     results = results.filter(r => r.region === state.selectedRegion);
   }
   if ((state.mode === 1 || state.mode === 3) && state.selectedIngredients.length > 0) {
+    const total = state.selectedIngredients.length;
     results = results
       .map(r => {
         const matched = state.selectedIngredients.filter(i =>
           r.ingredients.some(ri => ri.includes(i) || i.includes(ri))
         );
-        return { ...r, matchCount: matched.length, matchedIngredients: matched };
+        const missing = state.selectedIngredients.filter(i =>
+          !r.ingredients.some(ri => ri.includes(i) || i.includes(ri))
+        );
+        return { ...r, matchCount: matched.length, matchedIngredients: matched, missingIngredients: missing, isFullMatch: matched.length === total };
       })
       .filter(r => r.matchCount > 0)
-      .sort((a, b) => b.matchCount - a.matchCount);
+      .sort((a, b) => {
+        if (a.isFullMatch !== b.isFullMatch) return b.isFullMatch - a.isFullMatch;
+        return b.matchCount - a.matchCount;
+      });
   } else {
-    results = results.map(r => ({ ...r, matchCount: 0, matchedIngredients: [] }));
+    results = results.map(r => ({ ...r, matchCount: 0, matchedIngredients: [], missingIngredients: [], isFullMatch: false }));
   }
   // 菜名过滤
   if (nameQuery) {

@@ -380,6 +380,36 @@ body {
   align-self: center;
 }
 
+/* ===== 分区分隔线 ===== */
+.section-divider {
+  text-align: center;
+  padding: 24px 16px;
+  margin: 8px 0;
+  background: linear-gradient(135deg, #FFF8E0, #FFEFD5);
+  border-radius: var(--radius);
+  border: 2px dashed #FFD93D;
+}
+.divider-icon { font-size: 2rem; margin-bottom: 6px; }
+.divider-text {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #B8860B;
+}
+.divider-sub {
+  font-size: 0.78rem;
+  color: #C9A033;
+  margin-top: 4px;
+}
+.recipe-missing {
+  font-size: 0.75rem;
+  color: #E67E22;
+  margin-top: 4px;
+  padding: 2px 8px;
+  background: #FFF3E0;
+  border-radius: 6px;
+  display: inline-block;
+}
+
 /* ===== 菜名搜索框 ===== */
 .name-search-wrap {
   display: flex;
