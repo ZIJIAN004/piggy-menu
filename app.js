@@ -138,19 +138,22 @@ function doSearch() {
     const total = state.selectedIngredients.length;
     results = results
       .map(r => {
+        // 用户有的食材中，菜谱也需要的
         const matched = state.selectedIngredients.filter(i =>
           r.ingredients.some(ri => ri.includes(i) || i.includes(ri))
         );
-        const missing = state.selectedIngredients.filter(i =>
-          !r.ingredients.some(ri => ri.includes(i) || i.includes(ri))
+        // 菜谱需要但用户没有的食材（需要额外购买的）
+        const needToBuy = r.ingredients.filter(ri =>
+          !state.selectedIngredients.some(i => ri.includes(i) || i.includes(ri))
         );
-        return { ...r, matchCount: matched.length, matchedIngredients: matched, missingIngredients: missing, isFullMatch: matched.length === total };
+        return { ...r, matchCount: matched.length, matchedIngredients: matched, missingIngredients: needToBuy, isFullMatch: matched.length === total };
       })
       .filter(r => r.matchCount > 0)
       .sort((a, b) => {
-        // 完全匹配优先，其次按匹配数降序
+        // 完全匹配优先，其次按匹配数降序，同匹配数则需额外购买少的优先
         if (a.isFullMatch !== b.isFullMatch) return b.isFullMatch - a.isFullMatch;
-        return b.matchCount - a.matchCount;
+        if (a.matchCount !== b.matchCount) return b.matchCount - a.matchCount;
+        return a.missingIngredients.length - b.missingIngredients.length;
       });
   } else {
     results = results.map(r => ({ ...r, matchCount: 0, matchedIngredients: [], missingIngredients: [], isFullMatch: false }));
@@ -166,8 +169,8 @@ function renderRecipeCard(r) {
   const matchText = r.matchedIngredients && r.matchedIngredients.length > 0
     ? `匹配食材：<strong>${r.matchedIngredients.join("、")}</strong>`
     : "";
-  const missingText = r.missingIngredients && r.missingIngredients.length > 0
-    ? `<div class="recipe-missing">缺：${r.missingIngredients.join("、")}</div>`
+  const missingText = r.missingIngredients && r.missingIngredients.length > 0 && r.matchCount > 0 && !r.isFullMatch
+    ? `<div class="recipe-missing">还需买：${r.missingIngredients.join("、")}</div>`
     : "";
   const sourceTag = r.source
     ? `<div class="source-tag source-tag-${r.source.platform}">${r.source.platform}收录 <span class="source-stats">👍${r.source.likes} ⭐${r.source.saves}</span></div>`
@@ -337,15 +340,16 @@ function filterResults() {
         const matched = state.selectedIngredients.filter(i =>
           r.ingredients.some(ri => ri.includes(i) || i.includes(ri))
         );
-        const missing = state.selectedIngredients.filter(i =>
-          !r.ingredients.some(ri => ri.includes(i) || i.includes(ri))
+        const needToBuy = r.ingredients.filter(ri =>
+          !state.selectedIngredients.some(i => ri.includes(i) || i.includes(ri))
         );
-        return { ...r, matchCount: matched.length, matchedIngredients: matched, missingIngredients: missing, isFullMatch: matched.length === total };
+        return { ...r, matchCount: matched.length, matchedIngredients: matched, missingIngredients: needToBuy, isFullMatch: matched.length === total };
       })
       .filter(r => r.matchCount > 0)
       .sort((a, b) => {
         if (a.isFullMatch !== b.isFullMatch) return b.isFullMatch - a.isFullMatch;
-        return b.matchCount - a.matchCount;
+        if (a.matchCount !== b.matchCount) return b.matchCount - a.matchCount;
+        return a.missingIngredients.length - b.missingIngredients.length;
       });
   } else {
     results = results.map(r => ({ ...r, matchCount: 0, matchedIngredients: [], missingIngredients: [], isFullMatch: false }));
